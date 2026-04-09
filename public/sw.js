@@ -1,5 +1,5 @@
-const CACHE_NAME = "lido-v1";
-const STATIC_ASSETS = ["/", "/manifest.json"];
+const CACHE_NAME = "lido-v2";
+const STATIC_ASSETS = ["/manifest.json"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
@@ -23,28 +23,18 @@ self.addEventListener("activate", (event) => {
 
 self.addEventListener("fetch", (event) => {
   const { request } = event;
-  const url = new URL(request.url);
 
   // Skip non-GET requests
   if (request.method !== "GET") return;
 
-  // Network-first for API calls
-  if (url.pathname.startsWith("/api/")) {
-    event.respondWith(
-      fetch(request).catch(() => caches.match(request))
-    );
-    return;
-  }
-
-  // Stale-while-revalidate for pages and assets
+  // Network-first for everything: always try network, fall back to cache
   event.respondWith(
-    caches.match(request).then((cached) => {
-      const fetched = fetch(request).then((response) => {
+    fetch(request)
+      .then((response) => {
         const clone = response.clone();
         caches.open(CACHE_NAME).then((cache) => cache.put(request, clone));
         return response;
-      });
-      return cached || fetched;
-    })
+      })
+      .catch(() => caches.match(request))
   );
 });
