@@ -1,6 +1,6 @@
 "use client";
 
-import { Suspense, useState } from "react";
+import { Suspense, useState, useCallback } from "react";
 import { createClient } from "@/lib/supabase/client";
 import { useSearchParams, useRouter } from "next/navigation";
 
@@ -23,6 +23,11 @@ function LoginContent() {
   const returnTo = searchParams.get("returnTo") || "/";
   const router = useRouter();
   const supabase = createClient();
+
+  const switchMode = useCallback((newMode: "signin" | "signup" | "magic") => {
+    setMode(newMode);
+    setError(null);
+  }, []);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -203,17 +208,17 @@ function LoginContent() {
               <>
                 <button
                   type="button"
-                  onClick={() => { setMode("signup"); setError(null); }}
-                  className="text-sm text-neutral-500 py-3 px-6 rounded-lg active:bg-neutral-100 cursor-pointer"
-                  style={{ touchAction: "manipulation", WebkitTapHighlightColor: "rgba(0,0,0,0.1)" }}
+                  onTouchEnd={(e) => { e.preventDefault(); switchMode("signup"); }}
+                  onClick={() => switchMode("signup")}
+                  className="text-sm text-neutral-500 py-3 px-6 rounded-lg active:bg-neutral-100 cursor-pointer select-none"
                 >
                   Don&apos;t have an account? <span className="font-medium text-neutral-800">Sign up</span>
                 </button>
                 <button
                   type="button"
-                  onClick={() => { setMode("magic"); setError(null); }}
-                  className="text-sm text-neutral-400 py-3 px-6 rounded-lg active:bg-neutral-100 cursor-pointer"
-                  style={{ touchAction: "manipulation", WebkitTapHighlightColor: "rgba(0,0,0,0.1)" }}
+                  onTouchEnd={(e) => { e.preventDefault(); switchMode("magic"); }}
+                  onClick={() => switchMode("magic")}
+                  className="text-sm text-neutral-400 py-3 px-6 rounded-lg active:bg-neutral-100 cursor-pointer select-none"
                 >
                   Use magic link instead
                 </button>
@@ -222,9 +227,9 @@ function LoginContent() {
             {mode === "signup" && (
               <button
                 type="button"
-                onClick={() => { setMode("signin"); setError(null); }}
-                className="text-sm text-neutral-500 py-3 px-6 rounded-lg active:bg-neutral-100 cursor-pointer"
-                style={{ touchAction: "manipulation", WebkitTapHighlightColor: "rgba(0,0,0,0.1)" }}
+                onTouchEnd={(e) => { e.preventDefault(); switchMode("signin"); }}
+                onClick={() => switchMode("signin")}
+                className="text-sm text-neutral-500 py-3 px-6 rounded-lg active:bg-neutral-100 cursor-pointer select-none"
               >
                 Already have an account? <span className="font-medium text-neutral-800">Sign in</span>
               </button>
@@ -232,9 +237,9 @@ function LoginContent() {
             {mode === "magic" && (
               <button
                 type="button"
-                onClick={() => { setMode("signin"); setError(null); }}
-                className="text-sm text-neutral-500 py-3 px-6 rounded-lg active:bg-neutral-100 cursor-pointer"
-                style={{ touchAction: "manipulation", WebkitTapHighlightColor: "rgba(0,0,0,0.1)" }}
+                onTouchEnd={(e) => { e.preventDefault(); switchMode("signin"); }}
+                onClick={() => switchMode("signin")}
+                className="text-sm text-neutral-500 py-3 px-6 rounded-lg active:bg-neutral-100 cursor-pointer select-none"
               >
                 Use password instead
               </button>
