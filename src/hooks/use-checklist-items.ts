@@ -40,7 +40,8 @@ export function useChecklistItems(holidayId: string, listType: "packing" | "todo
           table: "checklist_items",
           filter: `holiday_id=eq.${holidayId}`,
         },
-        (payload) => {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        (payload: any) => {
           if (payload.eventType === "INSERT") {
             const newItem = payload.new as ChecklistItem;
             if (newItem.list_type !== listType) return;
