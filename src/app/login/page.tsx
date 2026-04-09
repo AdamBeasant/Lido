@@ -1,8 +1,9 @@
 "use client";
 
-import { Suspense, useState, useCallback } from "react";
+import { Suspense, useState } from "react";
 import { createClient } from "@/lib/supabase/client";
 import { useSearchParams, useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function LoginPage() {
   return (
@@ -16,18 +17,13 @@ function LoginContent() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
-  const [mode, setMode] = useState<"signin" | "signup" | "magic">("signin");
   const [error, setError] = useState<string | null>(null);
   const [magicSent, setMagicSent] = useState(false);
   const searchParams = useSearchParams();
   const returnTo = searchParams.get("returnTo") || "/";
+  const mode = (searchParams.get("mode") as "signin" | "signup" | "magic") || "signin";
   const router = useRouter();
   const supabase = createClient();
-
-  const switchMode = useCallback((newMode: "signin" | "signup" | "magic") => {
-    setMode(newMode);
-    setError(null);
-  }, []);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -100,12 +96,12 @@ function LoginContent() {
           <p className="text-neutral-500 text-sm">
             We sent a sign-in link to <span className="font-medium text-neutral-700">{email}</span>
           </p>
-          <button
-            onClick={() => { setMagicSent(false); setMode("signin"); }}
-            className="text-sm text-blue-500 hover:text-blue-600"
+          <Link
+            href="/login"
+            className="text-sm text-blue-500 hover:text-blue-600 inline-block py-2"
           >
             Back to sign in
-          </button>
+          </Link>
         </div>
       </div>
     );
@@ -128,7 +124,6 @@ function LoginContent() {
             type="button"
             onClick={handleGoogleLogin}
             className="w-full h-12 flex items-center justify-center gap-2 border border-neutral-200 rounded-xl text-neutral-700 font-medium hover:bg-neutral-50 active:bg-neutral-100 transition-colors cursor-pointer"
-            style={{ touchAction: "manipulation" }}
           >
             <svg className="w-5 h-5" viewBox="0 0 24 24">
               <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4" />
@@ -157,8 +152,8 @@ function LoginContent() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="you@example.com"
-                className="w-full border border-neutral-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:border-neutral-400 focus:ring-1 focus:ring-neutral-400 transition-colors"
-                style={{ fontSize: "16px", touchAction: "manipulation" }}
+                className="w-full border border-neutral-200 rounded-lg px-3 py-2.5 outline-none focus:border-neutral-400 focus:ring-1 focus:ring-neutral-400 transition-colors"
+                style={{ fontSize: "16px" }}
                 autoComplete="email"
               />
             </div>
@@ -175,8 +170,8 @@ function LoginContent() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="••••••••"
-                  className="w-full border border-neutral-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:border-neutral-400 focus:ring-1 focus:ring-neutral-400 transition-colors"
-                  style={{ fontSize: "16px", touchAction: "manipulation" }}
+                  className="w-full border border-neutral-200 rounded-lg px-3 py-2.5 outline-none focus:border-neutral-400 focus:ring-1 focus:ring-neutral-400 transition-colors"
+                  style={{ fontSize: "16px" }}
                   autoComplete={mode === "signup" ? "new-password" : "current-password"}
                   minLength={6}
                 />
@@ -191,7 +186,6 @@ function LoginContent() {
               type="submit"
               disabled={loading}
               className="w-full h-12 bg-neutral-900 text-white font-medium rounded-xl hover:bg-neutral-800 active:bg-neutral-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors cursor-pointer"
-              style={{ touchAction: "manipulation" }}
             >
               {loading
                 ? "Loading..."
@@ -206,43 +200,35 @@ function LoginContent() {
           <div className="flex flex-col items-center gap-3 pb-8">
             {mode === "signin" && (
               <>
-                <button
-                  type="button"
-                  onTouchEnd={(e) => { e.preventDefault(); switchMode("signup"); }}
-                  onClick={() => switchMode("signup")}
-                  className="text-sm text-neutral-500 py-3 px-6 rounded-lg active:bg-neutral-100 cursor-pointer select-none"
+                <Link
+                  href={`/login?mode=signup&returnTo=${encodeURIComponent(returnTo)}`}
+                  className="text-sm text-neutral-500 py-3 px-6 rounded-lg active:bg-neutral-100"
                 >
                   Don&apos;t have an account? <span className="font-medium text-neutral-800">Sign up</span>
-                </button>
-                <button
-                  type="button"
-                  onTouchEnd={(e) => { e.preventDefault(); switchMode("magic"); }}
-                  onClick={() => switchMode("magic")}
-                  className="text-sm text-neutral-400 py-3 px-6 rounded-lg active:bg-neutral-100 cursor-pointer select-none"
+                </Link>
+                <Link
+                  href={`/login?mode=magic&returnTo=${encodeURIComponent(returnTo)}`}
+                  className="text-sm text-neutral-400 py-3 px-6 rounded-lg active:bg-neutral-100"
                 >
                   Use magic link instead
-                </button>
+                </Link>
               </>
             )}
             {mode === "signup" && (
-              <button
-                type="button"
-                onTouchEnd={(e) => { e.preventDefault(); switchMode("signin"); }}
-                onClick={() => switchMode("signin")}
-                className="text-sm text-neutral-500 py-3 px-6 rounded-lg active:bg-neutral-100 cursor-pointer select-none"
+              <Link
+                href={`/login?returnTo=${encodeURIComponent(returnTo)}`}
+                className="text-sm text-neutral-500 py-3 px-6 rounded-lg active:bg-neutral-100"
               >
                 Already have an account? <span className="font-medium text-neutral-800">Sign in</span>
-              </button>
+              </Link>
             )}
             {mode === "magic" && (
-              <button
-                type="button"
-                onTouchEnd={(e) => { e.preventDefault(); switchMode("signin"); }}
-                onClick={() => switchMode("signin")}
-                className="text-sm text-neutral-500 py-3 px-6 rounded-lg active:bg-neutral-100 cursor-pointer select-none"
+              <Link
+                href={`/login?returnTo=${encodeURIComponent(returnTo)}`}
+                className="text-sm text-neutral-500 py-3 px-6 rounded-lg active:bg-neutral-100"
               >
                 Use password instead
-              </button>
+              </Link>
             )}
           </div>
         </div>
