@@ -14,7 +14,7 @@ create table public.holidays (
   image_blur_hash text,
   latitude numeric(10,7),
   longitude numeric(10,7),
-  created_by uuid references auth.users(id) on delete cascade not null,
+  created_by uuid references auth.users(id) on delete cascade not null default auth.uid(),
   created_at timestamptz default now(),
   updated_at timestamptz default now()
 );

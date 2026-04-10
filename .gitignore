@@ -40,3 +40,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+Archive/node_modules/
+Archive/node_modules/
+*.xcuserstate

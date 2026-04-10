@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07A4C36C2905190148416D7E /* SupabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8421C5C9913C4748005F4C84 /* SupabaseManager.swift */; };
+		096BCED3040B1D2B1DBFACBA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB42D25DC55654446B261F05 /* LoginView.swift */; };
+		17D37E3734701BD374D4A976 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25ADF1255F91A13F19CB584 /* ChecklistItem.swift */; };
+		2003FC7C93B639515B1FFC2B /* WeatherCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FE1896BBCE096BC360E4F8 /* WeatherCardView.swift */; };
+		354A602C3268332CB1E09106 /* ChecklistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7554BE3667660A771D7B46D9 /* ChecklistView.swift */; };
+		402D6EE99A58B05A837DD413 /* CreateHolidayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B9D4F2B3E4C79AEF72ED1D /* CreateHolidayView.swift */; };
+		40E40F8331BBC0D25A3A6F70 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = DAFA1B0206FD5039FC260BFD /* Supabase */; };
+		4A36129B4C81902E12B59ADF /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89417B3393A9DBF953618C8C /* Profile.swift */; };
+		55902370D873D71BCC299404 /* ProfileSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1744117F52BDFAC13C4C6C82 /* ProfileSheet.swift */; };
+		629A1E20BD308C78162E8291 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FD887213DA8A4CAA508D8B /* Assets.xcassets */; };
+		68C3E3456E922039A836B5A6 /* RestaurantListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83612178956F3912CDF35902 /* RestaurantListView.swift */; };
+		68C6664F479F726F964D0BC0 /* Holiday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F491B009245FC86082720A /* Holiday.swift */; };
+		711EBA286A32A80789182697 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21264CF10CEE024BC62AE4A9 /* Theme.swift */; };
+		73B50E9D2ED430BA8F49C32F /* LidoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0B3573AEB262CD87CC3E23 /* LidoTextField.swift */; };
+		7409C48D3BC5306727C24EDB /* UnsplashService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A951CECC12060837240BD0D /* UnsplashService.swift */; };
+		7BF249DDCA8F807A81B7F81B /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCFD9E6484EF001C34703B2 /* RootView.swift */; };
+		7F90E77ED42B957D94415320 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47C02F64DDE2991FE716491 /* Weather.swift */; };
+		842E627711BDDCD5DAE9B186 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22013AE890C22628A4891151 /* Restaurant.swift */; };
+		95D436381410CBEC0001CE00 /* ShareHolidayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8A384681E73781F3B0F02C /* ShareHolidayView.swift */; };
+		9738E393F6B15771C2B9EC57 /* HolidayListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84833DA088CA2ED717AFACCC /* HolidayListView.swift */; };
+		98B20910118C7B32857683CC /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071DA2312DDA5A4F5AFBAB16 /* AuthManager.swift */; };
+		9FE0865468378599CC399A91 /* CountdownBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348057D10C3287730CF62A15 /* CountdownBadge.swift */; };
+		A5386754EE01F3F70F741606 /* HolidayDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B77DD59925E0E4605A3A3A /* HolidayDetailView.swift */; };
+		A82226A6830DF0781B148F81 /* UnsplashImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC147D9466501735FB53ED7C /* UnsplashImage.swift */; };
+		CC90AD5F6F36FA0F679501FE /* LidoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0CC9605A50B2FCD7934094 /* LidoApp.swift */; };
+		E642DBBCD5F2264A1A60D702 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AF1F2D21D5583E53224B0D /* WeatherService.swift */; };
+		EF26815429A57E118283F4F0 /* HolidayCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375847115ABA6A0E2B93E934 /* HolidayCardView.swift */; };
+		F04CA6BE071DDAF14ABCC612 /* HolidayMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB46FB5360B748AF419A1C1 /* HolidayMember.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00B77DD59925E0E4605A3A3A /* HolidayDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayDetailView.swift; sourceTree = "<group>"; };
+		04FD887213DA8A4CAA508D8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		071DA2312DDA5A4F5AFBAB16 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		0A951CECC12060837240BD0D /* UnsplashService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashService.swift; sourceTree = "<group>"; };
+		1744117F52BDFAC13C4C6C82 /* ProfileSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSheet.swift; sourceTree = "<group>"; };
+		21264CF10CEE024BC62AE4A9 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		22013AE890C22628A4891151 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		348057D10C3287730CF62A15 /* CountdownBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownBadge.swift; sourceTree = "<group>"; };
+		375847115ABA6A0E2B93E934 /* HolidayCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayCardView.swift; sourceTree = "<group>"; };
+		50B9D4F2B3E4C79AEF72ED1D /* CreateHolidayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHolidayView.swift; sourceTree = "<group>"; };
+		6655143975B7267425053B1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6B0B3573AEB262CD87CC3E23 /* LidoTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LidoTextField.swift; sourceTree = "<group>"; };
+		7554BE3667660A771D7B46D9 /* ChecklistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistView.swift; sourceTree = "<group>"; };
+		81F491B009245FC86082720A /* Holiday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Holiday.swift; sourceTree = "<group>"; };
+		83612178956F3912CDF35902 /* RestaurantListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListView.swift; sourceTree = "<group>"; };
+		8421C5C9913C4748005F4C84 /* SupabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseManager.swift; sourceTree = "<group>"; };
+		84833DA088CA2ED717AFACCC /* HolidayListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayListView.swift; sourceTree = "<group>"; };
+		89417B3393A9DBF953618C8C /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		9C8A384681E73781F3B0F02C /* ShareHolidayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareHolidayView.swift; sourceTree = "<group>"; };
+		9CB46FB5360B748AF419A1C1 /* HolidayMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayMember.swift; sourceTree = "<group>"; };
+		A25ADF1255F91A13F19CB584 /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
+		A47C02F64DDE2991FE716491 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		A821B50C925D06863A0E1B42 /* Lido.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Lido.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA0CC9605A50B2FCD7934094 /* LidoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LidoApp.swift; sourceTree = "<group>"; };
+		BCCFD9E6484EF001C34703B2 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		C4FE1896BBCE096BC360E4F8 /* WeatherCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCardView.swift; sourceTree = "<group>"; };
+		C7AF1F2D21D5583E53224B0D /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		CDF18092B070055EBE4E20DC /* Lido.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Lido.entitlements; sourceTree = "<group>"; };
+		DB42D25DC55654446B261F05 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FC147D9466501735FB53ED7C /* UnsplashImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashImage.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C727DAF87EA2D5AFCA0BFAEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40E40F8331BBC0D25A3A6F70 /* Supabase in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04F85B8309E3BDCFAFFEEE54 = {
+			isa = PBXGroup;
+			children = (
+				EB94446FCC5AC149EA6CE2F4 /* Lido */,
+				5B58113DEB854BF3E62DA2E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0663868EB8605A516905BC01 /* Restaurants */ = {
+			isa = PBXGroup;
+			children = (
+				83612178956F3912CDF35902 /* RestaurantListView.swift */,
+			);
+			path = Restaurants;
+			sourceTree = "<group>";
+		};
+		1AD162E5D5600D2A461F4748 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				DB42D25DC55654446B261F05 /* LoginView.swift */,
+				1744117F52BDFAC13C4C6C82 /* ProfileSheet.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		266FA1F2137A81B9F9DB14B7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A25ADF1255F91A13F19CB584 /* ChecklistItem.swift */,
+				81F491B009245FC86082720A /* Holiday.swift */,
+				9CB46FB5360B748AF419A1C1 /* HolidayMember.swift */,
+				89417B3393A9DBF953618C8C /* Profile.swift */,
+				22013AE890C22628A4891151 /* Restaurant.swift */,
+				FC147D9466501735FB53ED7C /* UnsplashImage.swift */,
+				A47C02F64DDE2991FE716491 /* Weather.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		490BC9397F00E8AFE9BADE78 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				21264CF10CEE024BC62AE4A9 /* Theme.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5532C657CACC02D0232E6669 /* Sharing */ = {
+			isa = PBXGroup;
+			children = (
+				9C8A384681E73781F3B0F02C /* ShareHolidayView.swift */,
+			);
+			path = Sharing;
+			sourceTree = "<group>";
+		};
+		5B58113DEB854BF3E62DA2E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A821B50C925D06863A0E1B42 /* Lido.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76DF557BAFBE191D2545F7C0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1AD162E5D5600D2A461F4748 /* Auth */,
+				A0371C3253ABB4CB1A53FEDA /* Checklist */,
+				A19697BA191DBC436AA131A3 /* Components */,
+				DCC3C3C2C1FDF406653358AC /* Holidays */,
+				0663868EB8605A516905BC01 /* Restaurants */,
+				5532C657CACC02D0232E6669 /* Sharing */,
+				95387C3D8AD6EC387B34B7AA /* Weather */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		95387C3D8AD6EC387B34B7AA /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				C4FE1896BBCE096BC360E4F8 /* WeatherCardView.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		9BE178D3173A1FE6E387514C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				071DA2312DDA5A4F5AFBAB16 /* AuthManager.swift */,
+				8421C5C9913C4748005F4C84 /* SupabaseManager.swift */,
+				0A951CECC12060837240BD0D /* UnsplashService.swift */,
+				C7AF1F2D21D5583E53224B0D /* WeatherService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A0371C3253ABB4CB1A53FEDA /* Checklist */ = {
+			isa = PBXGroup;
+			children = (
+				7554BE3667660A771D7B46D9 /* ChecklistView.swift */,
+			);
+			path = Checklist;
+			sourceTree = "<group>";
+		};
+		A19697BA191DBC436AA131A3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				348057D10C3287730CF62A15 /* CountdownBadge.swift */,
+				6B0B3573AEB262CD87CC3E23 /* LidoTextField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		DCC3C3C2C1FDF406653358AC /* Holidays */ = {
+			isa = PBXGroup;
+			children = (
+				50B9D4F2B3E4C79AEF72ED1D /* CreateHolidayView.swift */,
+				375847115ABA6A0E2B93E934 /* HolidayCardView.swift */,
+				00B77DD59925E0E4605A3A3A /* HolidayDetailView.swift */,
+				84833DA088CA2ED717AFACCC /* HolidayListView.swift */,
+			);
+			path = Holidays;
+			sourceTree = "<group>";
+		};
+		EB7493D3312E351F7D650101 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6655143975B7267425053B1A /* Info.plist */,
+				CDF18092B070055EBE4E20DC /* Lido.entitlements */,
+				AA0CC9605A50B2FCD7934094 /* LidoApp.swift */,
+				BCCFD9E6484EF001C34703B2 /* RootView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EB94446FCC5AC149EA6CE2F4 /* Lido */ = {
+			isa = PBXGroup;
+			children = (
+				EB7493D3312E351F7D650101 /* App */,
+				266FA1F2137A81B9F9DB14B7 /* Models */,
+				9BE178D3173A1FE6E387514C /* Services */,
+				490BC9397F00E8AFE9BADE78 /* Utilities */,
+				76DF557BAFBE191D2545F7C0 /* Views */,
+				04FD887213DA8A4CAA508D8B /* Assets.xcassets */,
+			);
+			path = Lido;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D118DEC7BD4642C8D216F67 /* Lido */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86E90ECBECB2C34A24661A16 /* Build configuration list for PBXNativeTarget "Lido" */;
+			buildPhases = (
+				ACEE14906C1F867309EF04F7 /* Sources */,
+				785ADD87DE5629E91EFF03AC /* Resources */,
+				C727DAF87EA2D5AFCA0BFAEB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lido;
+			packageProductDependencies = (
+				DAFA1B0206FD5039FC260BFD /* Supabase */,
+			);
+			productName = Lido;
+			productReference = A821B50C925D06863A0E1B42 /* Lido.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		043A17B64E29FEBB99D2F90D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					5D118DEC7BD4642C8D216F67 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 92F4F1477F35C1986DB744D7 /* Build configuration list for PBXProject "Lido" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 04F85B8309E3BDCFAFFEEE54;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B3838667F5DBA6CA65CAD3C3 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 5B58113DEB854BF3E62DA2E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D118DEC7BD4642C8D216F67 /* Lido */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		785ADD87DE5629E91EFF03AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629A1E20BD308C78162E8291 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACEE14906C1F867309EF04F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98B20910118C7B32857683CC /* AuthManager.swift in Sources */,
+				17D37E3734701BD374D4A976 /* ChecklistItem.swift in Sources */,
+				354A602C3268332CB1E09106 /* ChecklistView.swift in Sources */,
+				9FE0865468378599CC399A91 /* CountdownBadge.swift in Sources */,
+				402D6EE99A58B05A837DD413 /* CreateHolidayView.swift in Sources */,
+				68C6664F479F726F964D0BC0 /* Holiday.swift in Sources */,
+				EF26815429A57E118283F4F0 /* HolidayCardView.swift in Sources */,
+				A5386754EE01F3F70F741606 /* HolidayDetailView.swift in Sources */,
+				9738E393F6B15771C2B9EC57 /* HolidayListView.swift in Sources */,
+				F04CA6BE071DDAF14ABCC612 /* HolidayMember.swift in Sources */,
+				CC90AD5F6F36FA0F679501FE /* LidoApp.swift in Sources */,
+				73B50E9D2ED430BA8F49C32F /* LidoTextField.swift in Sources */,
+				096BCED3040B1D2B1DBFACBA /* LoginView.swift in Sources */,
+				4A36129B4C81902E12B59ADF /* Profile.swift in Sources */,
+				55902370D873D71BCC299404 /* ProfileSheet.swift in Sources */,
+				842E627711BDDCD5DAE9B186 /* Restaurant.swift in Sources */,
+				68C3E3456E922039A836B5A6 /* RestaurantListView.swift in Sources */,
+				7BF249DDCA8F807A81B7F81B /* RootView.swift in Sources */,
+				95D436381410CBEC0001CE00 /* ShareHolidayView.swift in Sources */,
+				07A4C36C2905190148416D7E /* SupabaseManager.swift in Sources */,
+				711EBA286A32A80789182697 /* Theme.swift in Sources */,
+				A82226A6830DF0781B148F81 /* UnsplashImage.swift in Sources */,
+				7409C48D3BC5306727C24EDB /* UnsplashService.swift in Sources */,
+				7F90E77ED42B957D94415320 /* Weather.swift in Sources */,
+				2003FC7C93B639515B1FFC2B /* WeatherCardView.swift in Sources */,
+				E642DBBCD5F2264A1A60D702 /* WeatherService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		251D2A37983880D1BBCA4719 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Lido/App/Lido.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Lido/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adambeasant.lido;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		28FD9CC869000BBA69AEC74C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BCE39EE2E3C7697D05A21AF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C7F0CA60C751133D29F29E4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Lido/App/Lido.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Lido/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adambeasant.lido;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		86E90ECBECB2C34A24661A16 /* Build configuration list for PBXNativeTarget "Lido" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7F0CA60C751133D29F29E4C /* Debug */,
+				251D2A37983880D1BBCA4719 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		92F4F1477F35C1986DB744D7 /* Build configuration list for PBXProject "Lido" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28FD9CC869000BBA69AEC74C /* Debug */,
+				BCE39EE2E3C7697D05A21AF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B3838667F5DBA6CA65CAD3C3 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DAFA1B0206FD5039FC260BFD /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3838667F5DBA6CA65CAD3C3 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 043A17B64E29FEBB99D2F90D /* Project object */;
+}
