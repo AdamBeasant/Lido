@@ -4,31 +4,31 @@
     { "id": "page-2", "name": "Directions" }
   ],
   "artboards": [
-    { "file": "Main.dc.html",       "x": 0,    "y": 0,   "w": 390, "h": 844, "title": "Home",        "page": "page-1" },
-    { "file": "Trip.dc.html",       "x": 470,  "y": 0,   "w": 390, "h": 844, "title": "Trip",        "page": "page-1" },
-    { "file": "Packing.dc.html",    "x": 940,  "y": 0,   "w": 390, "h": 844, "title": "Packing",     "page": "page-1" },
-    { "file": "Food.dc.html",       "x": 1410, "y": 0,   "w": 390, "h": 844, "title": "Food",        "page": "page-1" },
-    { "file": "NewTrip.dc.html",    "x": 1880, "y": 0,   "w": 390, "h": 844, "title": "New trip",    "page": "page-1" },
-    { "file": "System.dc.html",     "x": 0,    "y": 984, "w": 900, "h": 620, "title": "The kit",     "page": "page-1" },
-    { "file": "DirectionB.dc.html", "x": 0,    "y": 0,   "w": 390, "h": 844, "title": "Option B",    "page": "page-2" },
-    { "file": "DirectionC.dc.html", "x": 470,  "y": 0,   "w": 390, "h": 844, "title": "Option C",    "page": "page-2" }
+    { "file": "Main.dc.html",       "x": 0,    "y": 0,   "w": 390, "h": 844, "title": "Home",     "page": "page-1" },
+    { "file": "Trip.dc.html",       "x": 470,  "y": 0,   "w": 390, "h": 844, "title": "Trip",     "page": "page-1" },
+    { "file": "Packing.dc.html",    "x": 940,  "y": 0,   "w": 390, "h": 844, "title": "Packing",  "page": "page-1" },
+    { "file": "Food.dc.html",       "x": 1410, "y": 0,   "w": 390, "h": 844, "title": "Food",     "page": "page-1" },
+    { "file": "NewTrip.dc.html",    "x": 1880, "y": 0,   "w": 390, "h": 844, "title": "New trip", "page": "page-1" },
+    { "file": "System.dc.html",     "x": 0,    "y": 984, "w": 980, "h": 760, "title": "The kit",  "page": "page-1" },
+    { "file": "DirectionB.dc.html", "x": 0,    "y": 0,   "w": 390, "h": 844, "title": "Option B", "page": "page-2" },
+    { "file": "DirectionC.dc.html", "x": 470,  "y": 0,   "w": 390, "h": 844, "title": "Option C", "page": "page-2" }
   ],
   "annotations": [
     {
       "id": "brief",
       "x": 0,
-      "y": -232,
+      "y": -248,
       "w": 700,
       "page": "page-1",
-      "text": "Lido, redrawn.\n\nThe big move: the four tabs on a trip (Overview / Packing / To-Do / Food) become one scrollable trip page with module cards, so you see what's outstanding without hunting. Everything else follows from that — a home screen that leads with the next trip and its readiness, a persistent composer for adding things, and group signals (who packed what, who's voted) surfaced instead of buried.\n\nReferences: Luma for the event page (cover card, action row, ambient tint), ChatGPT for the composer and suggestion chips, Wabi for the floating dock and warm card ground, Family/Canopi for the trip-first home."
+      "text": "Lido, redrawn for iOS 26.\n\nEvery piece of chrome is Liquid Glass and floats: nav is a set of glass capsules rather than a bar, the trip panel is a glass slab overlapping its cover, and the composer and dock sit above content that visibly passes under them. Two variants are used consistently — regular glass over content, clear glass over a cover with a scrim beneath it for legibility. Corner radii are concentric: a 30px panel holds 18px tiles at 16px inset.\n\nThe structural move underneath: a trip's four tabs (Overview / Packing / To-Do / Food) become one scrollable trip page with module cards, so outstanding work is visible without hunting.\n\nReferences: Luma for the event page, ChatGPT for the composer and suggestion chips, Wabi for the floating dock and warm card ground, Family/Canopi for the trip-first home."
     },
     {
       "id": "kit-note",
-      "x": 960,
+      "x": 1040,
       "y": 984,
-      "w": 320,
+      "w": 330,
       "page": "page-1",
-      "text": "The kit\n\nSand ground instead of flat white, pool-teal as the working accent, coral for anything that needs a person to act. Instrument Serif on trip and place names, Manrope everywhere else.\n\nCovers are drawn as flat riso poster art — no photo service was reachable from here, and the illustration style holds up better than stock at card size. Swap in Unsplash covers and the layouts still work."
+      "text": "The kit\n\nGlass needs something behind it, so the covers do real work: full-bleed art at the top of Home and Trip, an ambient colour wash on the list screens, and a blurred backdrop under the New trip sheet.\n\nOn photos — Unsplash is blocked by this session's network policy (403 on images.unsplash.com, unsplash.com and plus.unsplash.com), and the artifact CSP blocks external images regardless, so a photo has to be embedded rather than linked. The covers here are drawn instead: layered riso poster art with sun, sea, headland and terraced houses. Give me image files and I will inline them; the layouts take a photo unchanged."
     },
     {
       "id": "directions-note",
@@ -36,7 +36,7 @@
       "y": -176,
       "w": 700,
       "page": "page-2",
-      "text": "Two directions I did not take, sketched so you can push back.\n\nOption B treats the trip as an operations board — fastest to answer \"what do I owe the group?\", but it reads like a task app. Option C treats it as a loose board of cards you arrange — feels like the holiday, but it is hard to scan and expensive to build. The Screens page sits between them, leaning toward B's clarity with C's warmth."
+      "text": "Two directions I did not take, sketched so you can push back. These are pre-glass wireframes — they are about structure, not surface.\n\nOption B treats the trip as an operations board — fastest to answer \"what do I owe the group?\", but it reads like a task app. Option C treats it as a loose board of cards you arrange — feels like the holiday, but it is hard to scan and expensive to build. The Screens page sits between them, leaning toward B's clarity with C's warmth."
     }
   ],
   "launch": { "view": "canvas", "page": "page-1" }

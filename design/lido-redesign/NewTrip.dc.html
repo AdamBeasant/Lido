@@ -7,7 +7,7 @@
 <body>
 <x-dc>
 <helmet>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Manrope:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Manrope:wght@400;500;600;700;800&display=swap">
   <style>
     body { margin: 0; }
     * { box-sizing: border-box; }
@@ -15,109 +15,146 @@
     a:hover { color: #0A5A53; }
   </style>
 </helmet>
-<div style="position: relative; width: 390px; height: 844px; overflow: hidden; background: #F6F2EA; font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, sans-serif; color: #16211E; -webkit-font-smoothing: antialiased;">
+<div style="position: relative; width: 390px; height: 844px; overflow: hidden; background: #F4F0E8; font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, sans-serif; color: #16211E; -webkit-font-smoothing: antialiased;">
 
-  <div style="display: flex; align-items: center; justify-content: space-between; padding: 56px 20px 0 20px;">
-    <div style="width: 44px; height: 44px; border-radius: 999px; background: #FFFFFF; display: flex; align-items: center; justify-content: center; box-shadow: 0 1px 2px rgba(22,33,30,.05);">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16211E" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  <div style="position: absolute; left: 0; top: 0; width: 390px; height: 470px;">
+    <svg viewBox="0 0 390 470" width="390" height="470" style="display: block;" aria-hidden="true">
+      <defs>
+        <linearGradient id="nSky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#F9D9A4"/>
+          <stop offset="0.44" stop-color="#F6C293"/>
+          <stop offset="1" stop-color="#EFA184"/>
+        </linearGradient>
+        <radialGradient id="nSunGlow" cx="0.5" cy="0.5" r="0.5">
+          <stop offset="0" stop-color="#FFE9B8" stop-opacity="0.95"/>
+          <stop offset="0.55" stop-color="#FFC98A" stop-opacity="0.45"/>
+          <stop offset="1" stop-color="#FFBE80" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="nSea" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#2E8E86"/>
+          <stop offset="1" stop-color="#0C6259"/>
+        </linearGradient>
+      </defs>
+      <rect width="390" height="470" fill="url(#nSky)"/>
+      <circle cx="286" cy="130" r="150" fill="url(#nSunGlow)"/>
+      <circle cx="286" cy="130" r="40" fill="#FFF0CB" opacity="0.95"/>
+      <ellipse cx="120" cy="156" rx="150" ry="26" fill="#FBDDB4" opacity="0.5"/>
+      <rect y="252" width="390" height="218" fill="url(#nSea)"/>
+      <path d="M0 252 C 70 246, 130 258, 200 252 C 264 247, 320 257, 390 250 L390 264 L0 264 Z" fill="#4FA79C" opacity="0.5"/>
+      <path d="M0 244 C 44 208, 96 190, 150 218 C 186 236, 202 260, 214 294 C 224 324, 232 372, 236 470 L0 470 Z" fill="#0E6D63"/>
+      <path d="M0 270 C 40 236, 84 224, 128 252 C 158 271, 172 304, 180 342 C 187 376, 190 412, 190 470 L0 470 Z" fill="#0A4A44"/>
+      <path d="M390 280 C 348 274, 320 300, 302 334 C 288 362, 282 404, 280 470 L390 470 Z" fill="#0C3F3B" opacity="0.9"/>
+    </svg>
+  </div>
+  <div style="position: absolute; left: 0; top: 0; width: 390px; height: 470px; background: linear-gradient(180deg, rgba(10,26,24,.34), rgba(10,26,24,.18));"></div>
+
+  <div style="position: absolute; left: 0; right: 0; top: 46px; display: flex; justify-content: center;">
+    <div style="display: flex; align-items: center; justify-content: space-between; width: 358px;">
+      <div style="width: 40px; height: 40px; border-radius: 999px; background: rgba(255,255,255,.24); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); border: 0.5px solid rgba(255,255,255,.42); display: flex; align-items: center; justify-content: center; color: #FFFFFF;">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </div>
+      <div style="font-size: 14.5px; font-weight: 700; color: rgba(255,255,255,.92);">New trip</div>
+      <div style="width: 40px;"></div>
     </div>
-    <div style="font-size: 15px; font-weight: 700;">New trip</div>
-    <div style="width: 44px;"></div>
   </div>
 
-  <div style="padding: 0 20px;">
-    <div style="font-family: 'Instrument Serif', Georgia, serif; font-size: 34px; line-height: 1.08; margin-top: 18px;">Where are we going?</div>
-    <div style="font-size: 13px; color: #6E7C76; margin-top: 7px; max-width: 300px; line-height: 1.5;">Pick a place and Lido fills in the dates, the cover and a starter packing list.</div>
+  <div style="position: absolute; left: 0; right: 0; top: 108px; bottom: 0; border-radius: 42px 42px 0 0; padding: 0 20px; background: linear-gradient(180deg, rgba(255,255,255,.78), rgba(255,255,255,.9) 42%, rgba(252,249,243,.95)); backdrop-filter: blur(44px) saturate(200%); -webkit-backdrop-filter: blur(44px) saturate(200%); border-top: 0.5px solid rgba(255,255,255,.95); box-shadow: inset 0 1px 0.5px rgba(255,255,255,1), 0 -18px 50px rgba(10,26,24,.22);">
 
-    <div style="display: flex; align-items: center; gap: 12px; height: 62px; padding: 0 12px; border-radius: 20px; background: #FFFFFF; margin-top: 18px; box-shadow: 0 1px 2px rgba(22,33,30,.05), 0 0 0 1.5px #0E7A70;">
-      <div style="width: 38px; height: 38px; border-radius: 12px; overflow: hidden; flex: none;">
-        <svg viewBox="0 0 38 38" width="38" height="38" style="display: block;" aria-hidden="true">
-          <rect width="38" height="38" fill="#F6DCB2"/>
-          <circle cx="27" cy="12" r="7" fill="#E1633C"/>
-          <path d="M0 26 C 14 21, 22 30, 38 24 L38 38 L0 38 Z" fill="#0E7A70"/>
-          <path d="M0 30 C 9 23, 17 25, 22 38 L0 38 Z" fill="#0B564F"/>
+    <div style="display: flex; justify-content: center; padding-top: 10px;">
+      <div style="width: 38px; height: 5px; border-radius: 999px; background: rgba(22,33,30,.16);"></div>
+    </div>
+
+    <div style="font-family: 'Instrument Serif', Georgia, serif; font-size: 36px; line-height: 1.06; margin-top: 16px;">Where are we going?</div>
+    <div style="font-size: 13px; color: #5E6D68; margin-top: 7px; max-width: 310px; line-height: 1.5;">Pick a place and Lido fills in the dates, the cover and a starter packing list.</div>
+
+    <div style="display: flex; align-items: center; gap: 12px; height: 66px; padding: 0 12px; border-radius: 22px; margin-top: 18px; background: rgba(255,255,255,.72); border: 1.5px solid #0E7A70; box-shadow: inset 0 1px 0.5px rgba(255,255,255,.9), 0 4px 14px rgba(14,122,112,.14);">
+      <div style="width: 42px; height: 42px; border-radius: 14px; overflow: hidden; flex: none;">
+        <svg viewBox="0 0 42 42" width="42" height="42" style="display: block;" aria-hidden="true">
+          <rect width="42" height="42" fill="#F6DCB2"/>
+          <circle cx="30" cy="13" r="8" fill="#E1633C"/>
+          <path d="M0 28 C 15 23, 24 33, 42 26 L42 42 L0 42 Z" fill="#0E7A70"/>
+          <path d="M0 33 C 10 25, 19 27, 24 42 L0 42 Z" fill="#0B564F"/>
         </svg>
       </div>
       <div style="flex: 1; min-width: 0;">
-        <div style="font-size: 15.5px; font-weight: 600;">Positano</div>
-        <div style="font-size: 12px; color: #96A29C; margin-top: 2px;">Campania, Italy</div>
+        <div style="font-size: 16px; font-weight: 700;">Positano</div>
+        <div style="font-size: 12px; color: #8B968F; margin-top: 2px;">Campania, Italy</div>
       </div>
-      <svg width="20" height="20" viewBox="0 0 24 24" style="flex: none;"><circle cx="12" cy="12" r="10" fill="#0E7A70"/><path d="M7.6 12.2l2.9 2.9 5.9-6" fill="none" stroke="#FFFFFF" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <svg width="22" height="22" viewBox="0 0 24 24" style="flex: none;"><circle cx="12" cy="12" r="10" fill="#0E7A70"/><path d="M7.6 12.2l2.9 2.9 5.9-6" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </div>
 
     <div style="display: flex; gap: 8px; margin-top: 12px;">
-      <div style="height: 34px; padding: 0 13px; border-radius: 999px; background: #EFE9DD; color: #6E7C76; font-size: 12.5px; font-weight: 600; display: flex; align-items: center;">Lisbon</div>
-      <div style="height: 34px; padding: 0 13px; border-radius: 999px; background: #EFE9DD; color: #6E7C76; font-size: 12.5px; font-weight: 600; display: flex; align-items: center;">Chamonix</div>
-      <div style="height: 34px; padding: 0 13px; border-radius: 999px; background: #EFE9DD; color: #6E7C76; font-size: 12.5px; font-weight: 600; display: flex; align-items: center;">Copenhagen</div>
+      <div style="height: 36px; padding: 0 14px; border-radius: 999px; background: rgba(22,33,30,.05); border: 0.5px solid rgba(255,255,255,.7); color: #5E6D68; font-size: 13px; font-weight: 700; display: flex; align-items: center;">Lisbon</div>
+      <div style="height: 36px; padding: 0 14px; border-radius: 999px; background: rgba(22,33,30,.05); border: 0.5px solid rgba(255,255,255,.7); color: #5E6D68; font-size: 13px; font-weight: 700; display: flex; align-items: center;">Chamonix</div>
+      <div style="height: 36px; padding: 0 14px; border-radius: 999px; background: rgba(22,33,30,.05); border: 0.5px solid rgba(255,255,255,.7); color: #5E6D68; font-size: 13px; font-weight: 700; display: flex; align-items: center;">Copenhagen</div>
     </div>
 
-    <div style="margin-top: 24px; font-size: 11px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: #A0AAA4;">When</div>
+    <div style="margin-top: 22px; font-size: 11px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: #9AA5A0;">When</div>
     <div style="display: flex; align-items: center; gap: 10px; margin-top: 11px;">
-      <div style="flex: 1; height: 66px; border-radius: 18px; background: #FFFFFF; box-shadow: 0 1px 2px rgba(22,33,30,.05); padding: 11px 14px;">
-        <div style="font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #A0AAA4;">Leave</div>
-        <div style="font-size: 17px; font-weight: 700; margin-top: 5px;">Sun 24 Aug</div>
+      <div style="flex: 1; height: 68px; border-radius: 20px; background: rgba(255,255,255,.7); border: 0.5px solid rgba(255,255,255,.9); box-shadow: inset 0 1px 0.5px rgba(255,255,255,.95), 0 3px 10px rgba(16,34,30,.05); padding: 11px 15px;">
+        <div style="font-size: 10.5px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: #9AA5A0;">Leave</div>
+        <div style="font-size: 18px; font-weight: 800; margin-top: 5px;">Sun 24 Aug</div>
       </div>
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A0AAA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none;"><path d="M4 12h15"/><path d="M14 7l5 5-5 5"/></svg>
-      <div style="flex: 1; height: 66px; border-radius: 18px; background: #FFFFFF; box-shadow: 0 1px 2px rgba(22,33,30,.05); padding: 11px 14px;">
-        <div style="font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #A0AAA4;">Return</div>
-        <div style="font-size: 17px; font-weight: 700; margin-top: 5px;">Sun 31 Aug</div>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9AA5A0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: none;"><path d="M4 12h15"/><path d="M14 7l5 5-5 5"/></svg>
+      <div style="flex: 1; height: 68px; border-radius: 20px; background: rgba(255,255,255,.7); border: 0.5px solid rgba(255,255,255,.9); box-shadow: inset 0 1px 0.5px rgba(255,255,255,.95), 0 3px 10px rgba(16,34,30,.05); padding: 11px 15px;">
+        <div style="font-size: 10.5px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: #9AA5A0;">Return</div>
+        <div style="font-size: 18px; font-weight: 800; margin-top: 5px;">Sun 31 Aug</div>
       </div>
     </div>
 
-    <div style="margin-top: 24px; font-size: 11px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: #A0AAA4;">Cover</div>
+    <div style="margin-top: 22px; font-size: 11px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: #9AA5A0;">Cover</div>
     <div style="display: flex; gap: 10px; margin-top: 11px;">
-      <div style="width: 76px; height: 62px; border-radius: 16px; overflow: hidden; box-shadow: 0 0 0 2.5px #0E7A70, 0 0 0 5px #F6F2EA;">
-        <svg viewBox="0 0 76 62" width="76" height="62" style="display: block;" aria-hidden="true">
-          <rect width="76" height="62" fill="#F6DCB2"/>
-          <circle cx="54" cy="19" r="12" fill="#E1633C"/>
-          <path d="M0 42 C 26 34, 44 48, 76 39 L76 62 L0 62 Z" fill="#0E7A70"/>
-          <path d="M0 48 C 18 36, 34 40, 44 62 L0 62 Z" fill="#0B564F"/>
+      <div style="width: 74px; height: 62px; border-radius: 18px; overflow: hidden; box-shadow: 0 0 0 2.5px #0E7A70, 0 0 0 5px rgba(255,255,255,.85);">
+        <svg viewBox="0 0 74 62" width="74" height="62" style="display: block;" aria-hidden="true">
+          <rect width="74" height="62" fill="#F6DCB2"/>
+          <circle cx="53" cy="19" r="12" fill="#E1633C"/>
+          <path d="M0 42 C 26 34, 43 48, 74 39 L74 62 L0 62 Z" fill="#0E7A70"/>
+          <path d="M0 48 C 18 36, 33 40, 43 62 L0 62 Z" fill="#0B564F"/>
         </svg>
       </div>
-      <div style="width: 76px; height: 62px; border-radius: 16px; overflow: hidden;">
-        <svg viewBox="0 0 76 62" width="76" height="62" style="display: block;" aria-hidden="true">
-          <rect width="76" height="62" fill="#EBE0EC"/>
+      <div style="width: 74px; height: 62px; border-radius: 18px; overflow: hidden;">
+        <svg viewBox="0 0 74 62" width="74" height="62" style="display: block;" aria-hidden="true">
+          <rect width="74" height="62" fill="#EBE0EC"/>
           <circle cx="22" cy="20" r="11" fill="#D45C36"/>
-          <path d="M0 40 L20 26 L38 42 L54 30 L76 44 L76 62 L0 62 Z" fill="#7E6E96"/>
-          <rect y="50" width="76" height="12" fill="#3C3457"/>
+          <path d="M0 40 L20 26 L37 42 L53 30 L74 44 L74 62 L0 62 Z" fill="#7E6E96"/>
+          <rect y="50" width="74" height="12" fill="#3C3457"/>
         </svg>
       </div>
-      <div style="width: 76px; height: 62px; border-radius: 16px; overflow: hidden;">
-        <svg viewBox="0 0 76 62" width="76" height="62" style="display: block;" aria-hidden="true">
-          <rect width="76" height="62" fill="#DCE6E3"/>
-          <circle cx="24" cy="17" r="10" fill="#E0A33C"/>
-          <path d="M0 48 L22 22 L40 48 Z" fill="#7E948F"/>
-          <path d="M30 50 L50 20 L76 50 Z" fill="#2E4B49"/>
-          <rect y="48" width="76" height="14" fill="#123C3A"/>
+      <div style="width: 74px; height: 62px; border-radius: 18px; overflow: hidden;">
+        <svg viewBox="0 0 74 62" width="74" height="62" style="display: block;" aria-hidden="true">
+          <rect width="74" height="62" fill="#DCE6E3"/>
+          <circle cx="23" cy="17" r="10" fill="#E0A33C"/>
+          <path d="M0 48 L21 22 L39 48 Z" fill="#7E948F"/>
+          <path d="M29 50 L49 20 L74 50 Z" fill="#2E4B49"/>
+          <rect y="48" width="74" height="14" fill="#123C3A"/>
         </svg>
       </div>
-      <div style="flex: 1; height: 62px; border-radius: 16px; border: 1.5px dashed #D8D2C5; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: #96A29C;">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5.5" width="17" height="13" rx="3"/><circle cx="9" cy="10.5" r="1.8"/><path d="M4 16l5-4.5 4.5 4 3-2.5 4 3.5"/></svg>
-        <span style="font-size: 11px; font-weight: 600;">Photo</span>
+      <div style="flex: 1; height: 62px; border-radius: 18px; border: 1.5px dashed rgba(22,33,30,.2); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: #8B968F;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5.5" width="17" height="13" rx="3"/><circle cx="9" cy="10.5" r="1.8"/><path d="M4 16l5-4.5 4.5 4 3-2.5 4 3.5"/></svg>
+        <span style="font-size: 11px; font-weight: 700;">Photo</span>
       </div>
     </div>
 
-    <div style="display: flex; align-items: center; gap: 13px; margin-top: 22px; background: #FFFFFF; border-radius: 20px; padding: 14px; box-shadow: 0 1px 2px rgba(22,33,30,.05);">
-      <div style="width: 40px; height: 40px; border-radius: 13px; background: #E2EDE9; display: flex; align-items: center; justify-content: center; flex: none;">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E7A70" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="7.5" width="17" height="13" rx="3"/><path d="M9 7.5V5.5a1.5 1.5 0 011.5-1.5h3A1.5 1.5 0 0115 5.5v2"/></svg>
+    <div style="display: flex; align-items: center; gap: 13px; margin-top: 20px; border-radius: 22px; padding: 14px; background: rgba(255,255,255,.7); border: 0.5px solid rgba(255,255,255,.9); box-shadow: inset 0 1px 0.5px rgba(255,255,255,.95), 0 3px 10px rgba(16,34,30,.05);">
+      <div style="width: 42px; height: 42px; border-radius: 14px; background: rgba(14,122,112,.12); display: flex; align-items: center; justify-content: center; flex: none;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E7A70" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="7.5" width="17" height="13" rx="3"/><path d="M9 7.5V5.5a1.5 1.5 0 011.5-1.5h3A1.5 1.5 0 0115 5.5v2"/></svg>
       </div>
       <div style="flex: 1; min-width: 0;">
-        <div style="font-size: 14.5px; font-weight: 700;">Start a beach packing list</div>
-        <div style="font-size: 12px; color: #6E7C76; margin-top: 3px;">21 items across 6 categories</div>
+        <div style="font-size: 15px; font-weight: 700;">Start a beach packing list</div>
+        <div style="font-size: 12px; color: #5E6D68; margin-top: 3px;">21 items across 6 categories</div>
       </div>
-      <div style="width: 50px; height: 30px; border-radius: 999px; background: #0E7A70; padding: 3px; display: flex; justify-content: flex-end; flex: none;">
-        <div style="width: 24px; height: 24px; border-radius: 999px; background: #FFFFFF;"></div>
+      <div style="width: 52px; height: 31px; border-radius: 999px; background: linear-gradient(160deg, #17847A, #0C6259); padding: 3px; display: flex; justify-content: flex-end; flex: none; box-shadow: inset 0 1px 0.5px rgba(255,255,255,.35);">
+        <div style="width: 25px; height: 25px; border-radius: 999px; background: #FFFFFF; box-shadow: 0 1px 3px rgba(0,0,0,.2);"></div>
       </div>
     </div>
+
   </div>
 
-  <div style="position: absolute; left: 0; right: 0; bottom: 0; height: 130px; background: linear-gradient(to bottom, rgba(246,242,234,0), #F6F2EA 52%);"></div>
-
-  <div style="position: absolute; left: 20px; right: 20px; bottom: 30px; display: flex; align-items: center; gap: 10px;">
-    <div style="width: 54px; height: 54px; border-radius: 999px; background: #FFFFFF; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 22px rgba(22,33,30,.12); color: #16211E; flex: none;">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="8.5" r="3.6"/><path d="M4 19.5c0-3.2 2.7-5.2 6-5.2 1.3 0 2.5.3 3.5.9"/><path d="M18 14v6M15 17h6"/></svg>
+  <div style="position: absolute; left: 14px; right: 14px; bottom: 26px; display: flex; align-items: center; gap: 9px; height: 66px; padding: 7px; border-radius: 999px; background: linear-gradient(150deg, rgba(255,255,255,.72), rgba(255,255,255,.5)); backdrop-filter: blur(30px) saturate(200%); -webkit-backdrop-filter: blur(30px) saturate(200%); border: 0.5px solid rgba(255,255,255,.9); box-shadow: inset 0 1px 0.5px rgba(255,255,255,1), inset 0 -0.5px 0 rgba(255,255,255,.5), 0 16px 40px rgba(16,34,30,.16);">
+    <div style="width: 52px; height: 52px; border-radius: 999px; background: rgba(255,255,255,.65); border: 0.5px solid rgba(255,255,255,.85); box-shadow: inset 0 1px 0.5px rgba(255,255,255,.95); display: flex; align-items: center; justify-content: center; color: #16211E; flex: none;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="8.5" r="3.6"/><path d="M4 19.5c0-3.2 2.7-5.2 6-5.2 1.3 0 2.5.3 3.5.9"/><path d="M18 14v6M15 17h6"/></svg>
     </div>
-    <div style="flex: 1; height: 54px; border-radius: 999px; background: #16211E; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 600; box-shadow: 0 8px 22px rgba(22,33,30,.22);">Create trip</div>
+    <div style="flex: 1; height: 52px; border-radius: 999px; background: linear-gradient(160deg, #17847A, #0C6259); color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 15.5px; font-weight: 700; box-shadow: inset 0 1px 0.5px rgba(255,255,255,.42), 0 4px 14px rgba(12,98,89,.34);">Create trip</div>
   </div>
 
 </div>
