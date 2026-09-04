@@ -98,7 +98,7 @@
       "y": 984,
       "w": 330,
       "page": "page-1",
-      "text": "The kit\n\nEvery value here is lifted from the screens: hairlines are 0.5px of ink at 7% rather than a grey fill, cards carry a hairline plus a wide soft shadow, and glass always gets an inset top specular highlight so it reads as a lens rather than frosted plastic.\n\nOn photos \u2014 Unsplash is blocked by this session's network policy (403 on images.unsplash.com, unsplash.com and plus.unsplash.com), and the artifact CSP blocks external images regardless, so a photo has to be embedded rather than linked. Trip covers are drawn instead. Give me image files and I will inline them; the layouts take a photo unchanged."
+      "text": "The kit\n\nEvery value here is lifted from the screens: hairlines are 0.5px of ink at 7% rather than a grey fill, cards carry a hairline plus a wide soft shadow, and glass always gets an inset top specular highlight so it reads as a lens rather than frosted plastic.\n\nThe Amalfi cover is your photo, cropped to the town and the sea and inlined at 640px. The soft blur behind each screen is the same photo, blurred and scaled \u2014 so the colour on every screen is sampled from the trip itself rather than invented. Lisbon, Chamonix and Copenhagen thumbnails are still drawn; swap in photos for those and they will match."
     },
     {
       "id": "directions-note",
