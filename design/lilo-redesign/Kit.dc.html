@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <style>
+    body { margin: 0; }
+    * { box-sizing: border-box; }
+    a { color: #0F7C90; text-decoration: none; }
+    a:hover { color: #0B5F70; }
+    .lilo { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", system-ui, sans-serif; }
+    .mono { font-family: "SF Mono", ui-monospace, Menlo, monospace; }
+  </style>
+</helmet>
+<div class="lilo" style="width: 980px; height: 760px; overflow: hidden; background: #FFFFFF; color: #000000; -webkit-font-smoothing: antialiased; padding: 32px 36px;">
+
+  <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 24px;">
+    <div style="display: flex; align-items: center; gap: 14px;">
+      <img src="lilo-mark.png" alt="Lilo" style="height: 44px; width: auto; display: block;">
+      <div>
+        <div style="font-size: 26px; font-weight: 700; letter-spacing: -.4px;">The kit</div>
+        <div style="font-size: 13px; color: rgba(60,60,67,.6); margin-top: 2px;">Lifted from <span class="mono" style="font-size: 12px;">Utilities/Theme.swift</span> and <span class="mono" style="font-size: 12px;">Views/Components/</span></div>
+      </div>
+    </div>
+    <div style="display: flex; align-items: center; gap: 8px; height: 30px; padding: 0 13px; border-radius: 999px; background: rgba(94,191,209,.14); color: #0F7C90; font-size: 13px; font-weight: 600;">
+      <span style="width: 7px; height: 7px; border-radius: 999px; background: #0F7C90;"></span>
+      Proposals are marked
+    </div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; margin-top: 22px;">
+
+    <div style="border-radius: 18px; padding: 18px; box-shadow: 0 0 0 .5px rgba(60,60,67,.15), 0 4px 12px rgba(0,0,0,.05);">
+      <div style="font-size: 13px; font-weight: 600; color: rgba(60,60,67,.6); letter-spacing: .3px; text-transform: uppercase;">Colour</div>
+
+      <div style="display: flex; align-items: center; gap: 12px; margin-top: 14px;">
+        <span style="width: 40px; height: 40px; border-radius: 12px; background: #5EBFD1; flex: none;"></span>
+        <div style="flex: 1;">
+          <div style="font-size: 15px; font-weight: 600;">accent</div>
+          <div class="mono" style="font-size: 12px; color: rgba(60,60,67,.6); margin-top: 2px;">#5EBFD1 &middot; 0.37 0.75 0.82</div>
+        </div>
+      </div>
+      <div style="font-size: 13px; color: rgba(60,60,67,.6); line-height: 1.45; margin-top: 10px;">Single accent, used sparingly. Right for fills, selection and the tab capsule.</div>
+
+      <div style="border-radius: 12px; background: rgba(255,159,10,.08); padding: 12px 13px; margin-top: 14px;">
+        <div style="display: flex; align-items: center; gap: 7px;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="#C77A00"><path d="M12 2L1 21h22zm1 15h-2v-2h2zm0-4h-2V9h2z"/></svg>
+          <span style="font-size: 13px; font-weight: 600; color: #A96A00;">Contrast</span>
+        </div>
+        <div style="font-size: 13px; color: rgba(60,60,67,.75); line-height: 1.45; margin-top: 7px;"><span style="color: #5EBFD1; font-weight: 600;">This is accent on white</span> &mdash; 1.9:1, below the 4.5:1 floor. It appears as label text in <span class="mono" style="font-size: 12px;">Chip.tint</span> and as white-on-accent in <span class="mono" style="font-size: 12px;">PillButton.primary</span>.</div>
+      </div>
+
+      <div style="display: flex; align-items: center; gap: 12px; margin-top: 14px;">
+        <span style="width: 40px; height: 40px; border-radius: 12px; background: #0F7C90; flex: none;"></span>
+        <div style="flex: 1;">
+          <div style="display: flex; align-items: center; gap: 7px;">
+            <span style="font-size: 15px; font-weight: 600;">accentDeep</span>
+            <span style="height: 19px; padding: 0 7px; border-radius: 999px; background: rgba(94,191,209,.16); color: #0F7C90; font-size: 11px; font-weight: 600; display: inline-flex; align-items: center;">proposed</span>
+          </div>
+          <div class="mono" style="font-size: 12px; color: rgba(60,60,67,.6); margin-top: 2px;">#0F7C90 &middot; 4.9:1 on white</div>
+        </div>
+      </div>
+      <div style="font-size: 13px; color: rgba(60,60,67,.6); line-height: 1.45; margin-top: 10px;">Same hue, for accent <em>text</em> and small glyphs. Brand unchanged; legibility fixed.</div>
+
+      <div style="height: .5px; background: rgba(60,60,67,.12); margin: 15px 0 12px 0;"></div>
+      <div style="font-size: 13px; color: rgba(60,60,67,.6); line-height: 1.7;">Everything else stays semantic &mdash; <span class="mono" style="font-size: 12px;">label</span>, <span class="mono" style="font-size: 12px;">secondaryLabel</span>, <span class="mono" style="font-size: 12px;">systemBackground</span> &mdash; so dark mode keeps flipping for free.</div>
+    </div>
+
+    <div style="border-radius: 18px; padding: 18px; box-shadow: 0 0 0 .5px rgba(60,60,67,.15), 0 4px 12px rgba(0,0,0,.05);">
+      <div style="font-size: 13px; font-weight: 600; color: rgba(60,60,67,.6); letter-spacing: .3px; text-transform: uppercase;">Type &mdash; system, unchanged</div>
+      <div style="margin-top: 14px;">
+        <div style="font-size: 34px; font-weight: 700; letter-spacing: .37px; line-height: 1.1;">Amalfi Coast</div>
+        <div style="font-size: 12px; color: rgba(60,60,67,.6); margin-top: 3px;">largeTitle bold &middot; hero over the photo</div>
+      </div>
+      <div style="height: .5px; background: rgba(60,60,67,.1); margin: 13px 0;"></div>
+      <div>
+        <div style="font-size: 22px; font-weight: 700; letter-spacing: -.3px;">Monday 25th</div>
+        <div style="font-size: 12px; color: rgba(60,60,67,.6); margin-top: 3px;">title2 bold &middot; day headings</div>
+      </div>
+      <div style="height: .5px; background: rgba(60,60,67,.1); margin: 13px 0;"></div>
+      <div>
+        <div style="font-size: 17px; font-weight: 600;">Villa Mimosa</div>
+        <div style="font-size: 12px; color: rgba(60,60,67,.6); margin-top: 3px;">headline &middot; section and card titles</div>
+      </div>
+      <div style="height: .5px; background: rgba(60,60,67,.1); margin: 13px 0;"></div>
+      <div>
+        <div style="font-size: 15px; font-weight: 500;">Path of the Gods hike</div>
+        <div style="font-size: 12px; color: rgba(60,60,67,.6); margin-top: 3px;">subheadline medium &middot; row titles</div>
+      </div>
+      <div style="height: .5px; background: rgba(60,60,67,.1); margin: 13px 0;"></div>
+      <div>
+        <div style="font-size: 13px; color: rgba(60,60,67,.6);">Positano &middot; 7 nights &middot; 4 going</div>
+        <div style="font-size: 12px; color: rgba(60,60,67,.6); margin-top: 3px;">footnote secondary &middot; meta</div>
+      </div>
+      <div style="height: .5px; background: rgba(60,60,67,.1); margin: 13px 0;"></div>
+      <div>
+        <div style="font-size: 12px; font-weight: 600;">IN 12 DAYS</div>
+        <div style="font-size: 12px; color: rgba(60,60,67,.6); margin-top: 3px;">caption2 bold, tracking 0.3 &middot; badges</div>
+      </div>
+    </div>
+
+    <div style="border-radius: 18px; padding: 18px; box-shadow: 0 0 0 .5px rgba(60,60,67,.15), 0 4px 12px rgba(0,0,0,.05);">
+      <div style="font-size: 13px; font-weight: 600; color: rgba(60,60,67,.6); letter-spacing: .3px; text-transform: uppercase;">Parts</div>
+
+      <div style="display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap;">
+        <span style="height: 26px; padding: 0 10px; border-radius: 999px; background: rgba(116,116,128,.08); color: rgba(60,60,67,.6); font-size: 12px; font-weight: 600; display: inline-flex; align-items: center;">neutral</span>
+        <span style="height: 26px; padding: 0 10px; border-radius: 999px; background: rgba(94,191,209,.16); color: #0F7C90; font-size: 12px; font-weight: 600; display: inline-flex; align-items: center;">tint</span>
+        <span style="height: 26px; padding: 0 10px; border-radius: 999px; background: #5EBFD1; color: #FFFFFF; font-size: 12px; font-weight: 600; display: inline-flex; align-items: center;">filled</span>
+        <span style="height: 26px; padding: 0 10px; border-radius: 999px; border: 1px solid rgba(94,191,209,.5); color: #0F7C90; font-size: 12px; font-weight: 600; display: inline-flex; align-items: center;">outline</span>
+        <span style="height: 26px; padding: 0 10px; border-radius: 999px; background: rgba(255,159,10,.16); color: #A96A00; font-size: 12px; font-weight: 600; display: inline-flex; align-items: center;">needs you</span>
+      </div>
+
+      <div style="display: flex; gap: 8px; margin-top: 14px; align-items: center;">
+        <div style="height: 44px; padding: 0 24px; border-radius: 999px; background: #5EBFD1; color: #FFFFFF; font-size: 17px; font-weight: 600; display: flex; align-items: center;">Primary</div>
+        <div style="height: 44px; padding: 0 24px; border-radius: 999px; background: rgba(94,191,209,.12); color: #0F7C90; font-size: 17px; font-weight: 600; display: flex; align-items: center;">Secondary</div>
+      </div>
+
+      <div style="display: flex; gap: 9px; margin-top: 14px; align-items: center;">
+        <div style="height: 38px; padding: 0 14px; border-radius: 999px; background: rgba(94,191,209,.85); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); color: #FFFFFF; font-size: 13px; font-weight: 500; display: flex; align-items: center; gap: 6px; box-shadow: 0 3px 10px rgba(0,0,0,.12);">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="7.5" height="7.5" rx="1.6"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1.6"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="1.6"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.6"/></svg>
+          Overview
+        </div>
+        <div style="height: 38px; padding: 0 14px; border-radius: 999px; background: rgba(255,255,255,.5); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); font-size: 13px; font-weight: 500; display: flex; align-items: center; gap: 6px; box-shadow: 0 0 0 .5px rgba(60,60,67,.1), 0 3px 10px rgba(0,0,0,.07);">
+          Eat
+          <span style="min-width: 17px; height: 17px; padding: 0 5px; border-radius: 999px; background: #FF9F0A; color: #FFFFFF; font-size: 11px; font-weight: 600; display: flex; align-items: center; justify-content: center;">1</span>
+        </div>
+      </div>
+      <div style="font-size: 12px; color: rgba(60,60,67,.6); margin-top: 7px; line-height: 1.45;">Tab capsule unchanged &mdash; <span class="mono" style="font-size: 11px;">glassEffect(.clear.interactive().tint(...))</span>. The count badge is the proposal.</div>
+
+      <div style="border-radius: 18px; background: rgba(250,250,252,.86); box-shadow: 0 0 0 .5px rgba(60,60,67,.15), 0 4px 12px rgba(0,0,0,.05); padding: 14px; margin-top: 14px;">
+        <div style="font-size: 15px; font-weight: 600;">CardContainer</div>
+        <div style="font-size: 12px; color: rgba(60,60,67,.6); margin-top: 3px; line-height: 1.45;">ultraThinMaterial &middot; radius 18 &middot; separator 0.5px at 50% &middot; shadow black 6% r12 y4</div>
+      </div>
+
+      <div style="display: flex; gap: 16px; margin-top: 14px; font-size: 12px; color: rgba(60,60,67,.6);">
+        <span>spacing 4 &middot; 8 &middot; 16 &middot; 24 &middot; 48</span>
+        <span>radius 18 / 12 / capsule</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="border-radius: 18px; padding: 18px 20px; margin-top: 20px; box-shadow: 0 0 0 .5px rgba(60,60,67,.15), 0 4px 12px rgba(0,0,0,.05);">
+    <div style="font-size: 13px; font-weight: 600; color: rgba(60,60,67,.6); letter-spacing: .3px; text-transform: uppercase;">What these mockups propose</div>
+    <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; margin-top: 14px;">
+      <div>
+        <div style="font-size: 15px; font-weight: 600;">A &ldquo;Needs you&rdquo; card</div>
+        <div style="font-size: 13px; color: rgba(60,60,67,.6); line-height: 1.5; margin-top: 5px;">The four collapsibles hide whether anything is outstanding. One card names what is waiting, and the tabs carry counts so gaps are visible without tapping.</div>
+      </div>
+      <div>
+        <div style="font-size: 15px; font-weight: 600;">Gaps as first-class rows</div>
+        <div style="font-size: 13px; color: rgba(60,60,67,.6); line-height: 1.5; margin-top: 5px;">A missing return leg or an unbooked night in Ravello shows as a dashed amber row where it belongs, not as an absence you have to notice.</div>
+      </div>
+      <div>
+        <div style="font-size: 15px; font-weight: 600;">Import shows its working</div>
+        <div style="font-size: 13px; color: rgba(60,60,67,.6); line-height: 1.5; margin-top: 5px;">Each parsed booking previews exactly what it will create before you accept it, and says plainly when it could not read the mail.</div>
+      </div>
+      <div>
+        <div style="font-size: 15px; font-weight: 600;">A day view</div>
+        <div style="font-size: 13px; color: rgba(60,60,67,.6); line-height: 1.5; margin-top: 5px;">Travel, stay, eat and experience already share a timeline in the data. The itinerary screen draws it, and empty days become an invitation.</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

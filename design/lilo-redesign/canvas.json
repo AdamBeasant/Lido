@@ -1,0 +1,54 @@
+{
+  "pages": [
+    { "id": "page-1", "name": "Trip detail" },
+    { "id": "page-2", "name": "App" }
+  ],
+  "artboards": [
+    { "file": "Main.dc.html",       "x": 0,    "y": 0,   "w": 390, "h": 844, "title": "Overview",       "page": "page-1" },
+    { "file": "Travel.dc.html",     "x": 470,  "y": 0,   "w": 390, "h": 844, "title": "Travel",         "page": "page-1" },
+    { "file": "Stay.dc.html",       "x": 940,  "y": 0,   "w": 390, "h": 844, "title": "Stay",           "page": "page-1" },
+    { "file": "Eat.dc.html",        "x": 1410, "y": 0,   "w": 390, "h": 844, "title": "Eat",            "page": "page-1" },
+    { "file": "Experience.dc.html", "x": 1880, "y": 0,   "w": 390, "h": 844, "title": "Experience",     "page": "page-1" },
+    { "file": "Trips.dc.html",      "x": 0,    "y": 0,   "w": 390, "h": 844, "title": "Trips",          "page": "page-2" },
+    { "file": "Onboarding.dc.html", "x": 470,  "y": 0,   "w": 390, "h": 844, "title": "Onboarding",     "page": "page-2" },
+    { "file": "Import.dc.html",     "x": 940,  "y": 0,   "w": 390, "h": 844, "title": "Shared inbox",   "page": "page-2" },
+    { "file": "Stops.dc.html",      "x": 1410, "y": 0,   "w": 390, "h": 844, "title": "Stops, parties", "page": "page-2" },
+    { "file": "Itinerary.dc.html",  "x": 1880, "y": 0,   "w": 390, "h": 844, "title": "Itinerary",      "page": "page-2" },
+    { "file": "Kit.dc.html",        "x": 0,    "y": 984, "w": 980, "h": 760, "title": "The kit",        "page": "page-2" }
+  ],
+  "annotations": [
+    {
+      "id": "brief",
+      "x": 0,
+      "y": -276,
+      "w": 720,
+      "page": "page-1",
+      "text": "Lilo trip detail, extending the existing design system.\n\nEverything here is built from Lido/Utilities/Theme.swift and Views/Components — accent #5EBFD1, system fonts, radius 18/12/capsule, spacing 4/8/16/24/48, CardContainer's ultraThinMaterial with a 0.5px separator and a 6% shadow, the glass tab capsule, the 56pt packing pill and plus button. The hero keeps ProgressiveBlurView's exact gradient stops. Nothing invented that Theme.swift already answers.\n\nThree proposals, all visible on Overview:\n\n1. A \"Needs you\" card. The four collapsibles (Destination, Stops, Parties, Map) are good at hiding tertiary detail but they also hide whether anything is outstanding. One card names what is actually waiting on you, and the tab capsules carry counts so gaps are legible without tapping through.\n\n2. Gaps rendered as rows. A missing return leg on Travel, an unbooked night in Ravello on Stops — drawn where they belong in dashed amber, rather than being an absence you have to notice.\n\n3. Countdown carries planning state. Your comment says one loud thing per viewport; the countdown stays that thing, and picks up a thin progress line rather than a second card competing for the slot."
+    },
+    {
+      "id": "tabs-note",
+      "x": 2350,
+      "y": 0,
+      "w": 300,
+      "page": "page-1",
+      "text": "Tab screens are drawn scrolled — hero collapsed to a glass nav bar — since that is the state you are in once you switch tabs.\n\nExperience shows the empty case, which is the common one: LiloEmptyState, then destination suggestions from the Google Places integration you already have. An empty tab that offers something beats an empty tab that apologises."
+    },
+    {
+      "id": "app-note",
+      "x": 0,
+      "y": -220,
+      "w": 720,
+      "page": "page-2",
+      "text": "The app around the trip, plus the newer surfaces.\n\nTrips keeps the 4:5 photo card and the lilo mark; the card picks up a planning bar and a \"needs you\" count so the list answers what the home screen is actually asked. Onboarding uses the real Positano asset behind the same progressive blur.\n\nShared inbox is the one I would look at hardest: every parsed booking previews exactly what it will create before you accept, and an unparseable mail says so plainly rather than filing something wrong. Trust in an importer is built on the failure case.\n\nItinerary is new. Travel, stay, eat and experience already share a timeline in the data — this draws it, and turns an empty day into an invitation rather than a blank.\n\nAssets are yours: lilo-inflatable, packing-medium, onboarding-positano, pulled from Assets.xcassets and downsampled."
+    },
+    {
+      "id": "kit-note",
+      "x": 1040,
+      "y": 984,
+      "w": 340,
+      "page": "page-2",
+      "text": "One thing worth acting on regardless of these mockups.\n\nThe accent at #5EBFD1 sits at 1.9:1 on white — well under the 4.5:1 floor. Chip.tint uses it as label text and PillButton.primary puts white on it, so both currently fail. The kit proposes accentDeep #0F7C90 for accent text and small glyphs only, keeping #5EBFD1 for fills, selection and the tab capsule where contrast is not carrying meaning. Same hue, same brand.\n\nEverything else in the kit is a record of what already exists, not a proposal."
+    }
+  ],
+  "launch": { "view": "canvas", "page": "page-1" }
+}
