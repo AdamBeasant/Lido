@@ -18,14 +18,18 @@ const plates = manifest.artboards.map((ab, i) => {
   const src = readFileSync(dir + ab.file, 'utf8')
   const body = src.slice(src.indexOf('<x-dc>') + 6, src.lastIndexOf('</x-dc>'))
     .replace(/<helmet>[\s\S]*?<\/helmet>/, '')
-    .replace(/src="\.?\/?([A-Za-z0-9_.-]+\.(?:jpg|png))"/g, (m, n) => img[n] ? `data-img="${n}"` : m)
+    .replace(/src="\.?\/?([A-Za-z0-9_.-]+\.(?:jpg|png))"/g, (m, n) => img[n] ? `data-img="${n}" loading="lazy" decoding="async"` : m)
+    // ~50 live backdrop-filter layers across 17 boards is what a mobile web view
+    // cannot composite. The white-over-white gradient already reads as frosted,
+    // so dropping the blur costs almost nothing here and the canvas keeps it.
+    .replace(/-?(?:webkit-)?backdrop-filter:[^;]+;\s*/g, '')
     .trim()
   const num = i < SCREENS ? String(i + 1).padStart(2, '0') : '&mdash;'
   const cap = CAPTION[ab.file] ? `<div class="cap">${para(CAPTION[ab.file])}</div>` : ''
   return `<section class="plate" id="s${i}">
   <div class="plate-head"><span class="num">${num}</span><h2>${esc(ab.title || ab.file)}</h2></div>
   ${cap}
-  <div class="frame" data-w="${ab.w}" data-h="${ab.h}" style="max-width:${ab.w}px"><div class="inner">${body}</div></div>
+  <div class="frame" data-w="${ab.w}" data-h="${ab.h}" style="max-width:${ab.w}px; contain-intrinsic-size: ${ab.w}px ${ab.h}px"><div class="inner">${body}</div></div>
 </section>`
 }).join('\n')
 
@@ -102,7 +106,8 @@ const html = `<title>Lilo Screen Plates</title>
   .cap p { margin: 0 0 10px; }
 
   .frame { position: relative; width: 100%; margin: 22px auto 0; overflow: hidden;
-           border-radius: 24px; background: #FFF; box-shadow: var(--lift); }
+           border-radius: 24px; background: #FFF; box-shadow: var(--lift);
+           content-visibility: auto; }
   .inner { transform-origin: top left; }
 
   footer { border-top: 1px solid var(--rule); padding: 22px 0 60px; color: var(--ink-3); font-size: 13px; }
