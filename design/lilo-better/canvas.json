@@ -1,39 +1,47 @@
 {
   "artboards": [
-    { "file": "Trips.dc.html",  "x": 0,    "y": 0,   "w": 390,  "h": 844,  "title": "Home" },
-    { "file": "Create.dc.html", "x": 470,  "y": 0,   "w": 390,  "h": 844,  "title": "New trip" },
-    { "file": "Main.dc.html",   "x": 940,  "y": 0,   "w": 390,  "h": 844,  "title": "The trip" },
-    { "file": "Add.dc.html",    "x": 1410, "y": 0,   "w": 390,  "h": 844,  "title": "Add" },
-    { "file": "Ask.dc.html",    "x": 1880, "y": 0,   "w": 390,  "h": 844,  "title": "Ask" },
-    { "file": "Who.dc.html",    "x": 2350, "y": 0,   "w": 390,  "h": 844,  "title": "Who's in" },
-    { "file": "Money.dc.html",  "x": 2820, "y": 0,   "w": 390,  "h": 844,  "title": "Money" },
-    { "file": "Days.dc.html",   "x": 3290, "y": 0,   "w": 390,  "h": 844,  "title": "The plan" },
-    { "file": "Saved.dc.html",  "x": 3760, "y": 0,   "w": 390,  "h": 844,  "title": "Saved" },
-    { "file": "Tokyo.dc.html",  "x": 4230, "y": 0,   "w": 390,  "h": 844,  "title": "A second trip" },
-    { "file": "Why.dc.html",    "x": 0,    "y": 984, "w": 1240, "h": 1020, "title": "Four arguments" },
-    { "file": "Kit.dc.html",    "x": 1340, "y": 984, "w": 980,  "h": 780,  "title": "The kit" }
+    { "file": "Trips.dc.html",  "x": 0,    "y": 0,   "w": 390,  "h": 844, "title": "Home" },
+    { "file": "Create.dc.html", "x": 470,  "y": 0,   "w": 390,  "h": 844, "title": "New trip" },
+    { "file": "Main.dc.html",   "x": 940,  "y": 0,   "w": 390,  "h": 844, "title": "The trip" },
+    { "file": "Manage.dc.html", "x": 1410, "y": 0,   "w": 390,  "h": 844, "title": "Manage" },
+    { "file": "Add.dc.html",    "x": 1880, "y": 0,   "w": 390,  "h": 844, "title": "Add" },
+    { "file": "Ask.dc.html",    "x": 2350, "y": 0,   "w": 390,  "h": 844, "title": "Ask" },
+    { "file": "Kitty.dc.html",  "x": 2820, "y": 0,   "w": 390,  "h": 844, "title": "The kitty" },
+    { "file": "Settle.dc.html", "x": 3290, "y": 0,   "w": 390,  "h": 844, "title": "Settle up" },
+    { "file": "Days.dc.html",   "x": 3760, "y": 0,   "w": 390,  "h": 844, "title": "The plan" },
+    { "file": "Saved.dc.html",  "x": 4230, "y": 0,   "w": 390,  "h": 844, "title": "Saved" },
+    { "file": "Tokyo.dc.html",  "x": 4700, "y": 0,   "w": 390,  "h": 844, "title": "A second trip" },
+    { "file": "Why.dc.html",    "x": 0,    "y": 984, "w": 1300, "h": 900, "title": "Four sources" },
+    { "file": "Kit.dc.html",    "x": 1400, "y": 984, "w": 1000, "h": 760, "title": "The kit" }
   ],
   "annotations": [
     {
       "id": "top",
       "x": 0,
-      "y": -268,
+      "y": -256,
       "w": 820,
-      "text": "Lilo, rebuilt from your four references only.\n\nFamily turned out to be pure black — huge numerals, label/value rows, an icon-only tab bar, a circular add button and a white pill to confirm. That reset the whole thing: every travel app is white, and on black a cover photo stops being decoration and becomes the light source. Luma tints a page with colour drawn from its own cover, which works better on dark than it did on the white ground I had.\n\nSo: Family sets the ground, the numerals and the rows. Luma sets creation and the ambient tint. Wise sets money. Grok sets the one input that both adds and answers.\n\nWhat is gone: the Partiful dock and the GroupMe two-button decision from the last round. You did not ask for those, and they were steering the design. Where an idea has no source in your four, it is not here.\n\nSample content throughout — names, times, prices and references are invented."
+      "text": "Lilo, designed from your four — verified this time.\n\nTwenty-six screens pulled and every one checked by app name before use. Seeing them properly changed the design more than the last round did.\n\nLuma's event page is far richer than I had it: an ambient wash taken from the cover, a four-tile action row, then labelled sections — Where with a map and the local temperature, Who's coming as three counts, Blasts from the host, and a locked Manage grid. The trip page and Manage now follow it closely.\n\nWise has Jars — a named pot with its own balance and its own circular actions. A trip kitty is exactly that, so Money became two screens: the kitty, and the settle-up breakdown with its dashed total.\n\nFamily gave the home screen: the section toggle sharing its row with the total, an unadorned list, a lot of black. Grok gave Add and Ask, including the collapsed Thoughts row standing in for the reasoning.\n\nSample content throughout — names, times, prices and references are invented."
     },
     {
-      "id": "dark-note",
-      "x": 4670,
-      "y": 0,
-      "w": 340,
-      "text": "Two trips, two accents.\n\nEach is sampled from its cover and lightened until it clears 4.5:1 on black — Amalfi warm, Tokyo cool. It drives the add button and the trip's links, and nothing else.\n\nA side effect worth having: Lilo cyan finally has the contrast on black that it never had on white, so it can go back to being the app mark without failing anything."
+      "id": "luma-note",
+      "x": 940,
+      "y": -150,
+      "w": 400,
+      "text": "The two Luma screens. The trip page is the guest view; Manage is what the organiser sees behind the lock icon — Luma keeps host controls on the same page, greyed and marked, rather than in settings."
+    },
+    {
+      "id": "wise-note",
+      "x": 2820,
+      "y": -150,
+      "w": 400,
+      "text": "The two Wise screens. A kitty is a jar: one balance, one holder, circular actions. Settle up is the breakdown — every row that built the number, then a dashed rule, then the net. The suggestion to collapse three transfers into one is the kind of thing Wise does and Lilo could."
     },
     {
       "id": "why-note",
       "x": 0,
       "y": 900,
-      "w": 600,
-      "text": "Four arguments, each with the app it came from and what that app actually does. If a source does not convince you, the screens it produced are the ones to throw out."
+      "w": 620,
+      "text": "What each app actually does, and what Lilo takes from it. Dark is the one thing not cited — Family ships both themes, Wise and Grok are light. That one is mine, argued on the photography."
     }
   ],
   "launch": { "view": "canvas" }
