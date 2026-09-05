@@ -15,7 +15,7 @@
     .u { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", system-ui, sans-serif; }
   </style>
 </helmet>
-<div class="u" style="width: 1240px; height: 880px; overflow: hidden; background: #FFFFFF; color: #0B0D0C; -webkit-font-smoothing: antialiased; padding: 34px 38px;">
+<div class="u" style="width: 1240px; height: 1040px; overflow: hidden; background: #FFFFFF; color: #0B0D0C; -webkit-font-smoothing: antialiased; padding: 34px 38px;">
   <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 30px;">
     <div>
       <div style="font-size: 12px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: rgba(11,13,12,.56);">Lilo</div>
@@ -97,21 +97,52 @@
     </div>
   </div>
 
-  <div style="border-radius: 24px; padding: 22px 26px; margin-top: 26px; background: rgba(11,13,12,.03);">
+  <div style="display: grid; grid-template-columns: 1.35fr 1fr; gap: 26px; margin-top: 26px;">
+    <div style="border-radius: 24px; padding: 24px; box-shadow: 0 0 0 .5px rgba(11,13,12,.09), 0 6px 20px rgba(11,13,12,.05);">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <span style="width: 26px; height: 26px; border-radius: 999px; background: #98673E; color: #FFFFFF; font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center;">4</span>
+        <span style="font-size: 19px; font-weight: 700; letter-spacing: -.3px;">Nobody has settled up</span>
+      </div>
+      <div style="display: flex; gap: 26px; margin-top: 18px;">
+        <div style="flex: 1;">
+          <div style="font-size: 14px; color: rgba(11,13,12,.56); line-height: 1.6;">A trip for four costs a few thousand pounds, one person fronts most of it, and the reckoning happens weeks later in a group chat. Lilo already models parties with split bookings &mdash; it has the shape of the problem and none of the arithmetic.</div>
+          <div style="font-size: 14px; line-height: 1.6; margin-top: 12px; font-weight: 600;">So: a money screen that opens with the only number you care about &mdash; what you are owed, or what you owe &mdash; and shows its working underneath.</div>
+        </div>
+        <div style="flex: none; width: 250px; border-radius: 16px; background: rgba(11,13,12,.03); padding: 16px;">
+          <div style="font-size: 11.5px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: rgba(11,13,12,.56);">The Wise move</div>
+          <div style="font-size: 13px; color: rgba(11,13,12,.56); line-height: 1.55; margin-top: 9px;">Wise never shows a total without showing what built it. Every fee is a row, the total sits under a dashed rule, and the number you actually receive is the biggest thing on screen.</div>
+          <div style="font-size: 13px; color: rgba(11,13,12,.56); line-height: 1.55; margin-top: 9px;">Split costs deserve exactly that treatment. Trust in a number is built by showing the rows.</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="border-radius: 24px; padding: 24px; background: rgba(11,13,12,.03);">
+      <div style="font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: rgba(11,13,12,.56);">Borrowed from</div>
+      <div style="display: flex; flex-direction: column; gap: 13px; margin-top: 14px;">
+        <div><span style="font-size: 14px; font-weight: 600;">Luma</span><span style="font-size: 13.5px; color: rgba(11,13,12,.56);"> &mdash; cover-first creation, rows you edit in place, and a picker that opens over the row it belongs to.</span></div>
+        <div><span style="font-size: 14px; font-weight: 600;">Wise</span><span style="font-size: 13.5px; color: rgba(11,13,12,.56);"> &mdash; the number that matters set huge, and never a total without its rows.</span></div>
+        <div><span style="font-size: 14px; font-weight: 600;">Family</span><span style="font-size: 13.5px; color: rgba(11,13,12,.56);"> &mdash; restraint. The countdown is the whole hero; lists lose their cards and keep a hairline.</span></div>
+        <div><span style="font-size: 14px; font-weight: 600;">Grok</span><span style="font-size: 13.5px; color: rgba(11,13,12,.56);"> &mdash; one surface that both adds and answers, a visible reading step, and replies as plain prose rather than bubbles.</span></div>
+        <div><span style="font-size: 14px; font-weight: 600;">Partiful</span><span style="font-size: 13.5px; color: rgba(11,13,12,.56);"> &mdash; live group state sitting inside the toolbar.</span></div>
+        <div><span style="font-size: 14px; font-weight: 600;">GroupMe</span><span style="font-size: 13.5px; color: rgba(11,13,12,.56);"> &mdash; a decision is two buttons and nothing else.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div style="border-radius: 24px; padding: 20px 26px; margin-top: 22px; background: rgba(11,13,12,.03);">
     <div style="display: flex; align-items: flex-start; gap: 40px;">
       <div style="flex: none; width: 190px;">
         <div style="font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: rgba(11,13,12,.56);">What stays</div>
         <div style="font-size: 13px; color: rgba(11,13,12,.56); line-height: 1.55; margin-top: 8px;">None of this is a rebuild.</div>
       </div>
       <div style="flex: 1; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px;">
-        <div><div style="font-size: 14px; font-weight: 600;">The live countdown</div><div style="font-size: 12.5px; color: rgba(11,13,12,.56); line-height: 1.5; margin-top: 4px;">Days, hours, mins, secs, ticking. It is the best thing in the app.</div></div>
+        <div><div style="font-size: 14px; font-weight: 600;">The live countdown</div><div style="font-size: 12.5px; color: rgba(11,13,12,.56); line-height: 1.5; margin-top: 4px;">Now the hero, at 78px. It is the best thing in the app.</div></div>
         <div><div style="font-size: 14px; font-weight: 600;">The photography</div><div style="font-size: 12.5px; color: rgba(11,13,12,.56); line-height: 1.5; margin-top: 4px;">Full-bleed covers and the progressive blur, unchanged.</div></div>
         <div><div style="font-size: 14px; font-weight: 600;">The glass</div><div style="font-size: 12.5px; color: rgba(11,13,12,.56); line-height: 1.5; margin-top: 4px;">Floating chrome over content. Just fewer things floating.</div></div>
         <div><div style="font-size: 14px; font-weight: 600;">The lilo</div><div style="font-size: 12.5px; color: rgba(11,13,12,.56); line-height: 1.5; margin-top: 4px;">It should show up more, not less. Empty days are its job.</div></div>
       </div>
     </div>
   </div>
-
 </div>
 </x-dc>
 </body>
