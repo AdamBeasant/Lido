@@ -10,40 +10,42 @@
     { "file": "Settle.dc.html",   "x": 3290, "y": 0,    "w": 390,  "h": 844, "title": "Settle up" },
     { "file": "Days.dc.html",     "x": 3760, "y": 0,    "w": 390,  "h": 844, "title": "The plan" },
     { "file": "Saved.dc.html",    "x": 4230, "y": 0,    "w": 390,  "h": 844, "title": "Saved" },
-    { "file": "Tokyo.dc.html",    "x": 4700, "y": 0,    "w": 390,  "h": 844, "title": "A second trip" },
+    { "file": "Story.dc.html",    "x": 4700, "y": 0,    "w": 390,  "h": 844, "title": "A story" },
+    { "file": "Memories.dc.html", "x": 5170, "y": 0,    "w": 390,  "h": 844, "title": "Memories" },
+    { "file": "Tokyo.dc.html",    "x": 5640, "y": 0,    "w": 390,  "h": 844, "title": "A second trip" },
     { "file": "Flows.dc.html",    "x": 0,    "y": 984,  "w": 1360, "h": 880, "title": "Three flows" },
     { "file": "Gestures.dc.html", "x": 1460, "y": 984,  "w": 1360, "h": 880, "title": "Gestures" },
-    { "file": "Why.dc.html",      "x": 0,    "y": 1984, "w": 1360, "h": 820, "title": "Four sources" },
-    { "file": "Kit.dc.html",      "x": 1460, "y": 1984, "w": 1020, "h": 780, "title": "The kit" }
+    { "file": "Why.dc.html",      "x": 0,    "y": 1984, "w": 1520, "h": 880, "title": "Five sources" },
+    { "file": "Kit.dc.html",      "x": 1620, "y": 1984, "w": 1020, "h": 780, "title": "The kit" }
   ],
   "annotations": [
     {
       "id": "top",
       "x": 0,
-      "y": -272,
-      "w": 840,
-      "text": "Lilo — light, with the flows and gestures worked out.\n\nOn Grok Bot: there is no separate app under that name in Mobbin's index. Every result returns Grok, so they are the same thing. Searching it again did turn up more of it — the bold lead sentence before the prose, Day 1 style subheads, the model-and-time stamp under an answer, an audio bar that slides in above the composer, and the composer turning black with a Stop while it generates. Ask and Add now follow that.\n\nLight throughout, which is where three of the four sources actually live. Luma's real trick was never the darkness but the tint — the cover's own colours washed softly behind the content — and that works on white.\n\nTwo new boards below the screens. Three flows counted step by step against how they work today, and every gesture with the visible control that does the same job. No gesture is the only way to reach anything."
+      "y": -292,
+      "w": 860,
+      "text": "Lilo — light, on Liquid Glass, with Bond folded in.\n\nOn Grok Bot: you are right that it is a separate app, and I cannot get to it. mobbin.com is blocked by this session's network policy so the link will not open, and every search — including the bare string \"Grok Bot\" — returns screens whose app name is Grok. Rather than guess, nothing here claims to come from it. Send me two or three screenshots and I will fold it in properly.\n\nBond verified 8 for 8, and it earns two screens. Stories run across the top of a trip, captured while it is happening. Memories turns finished trips into the source of the next one's suggestions — Bond's Discover card, reading \"you have walked three coast paths now, here is the one above Lisbon\", with the persistent ask-your-memories pill and its counter.\n\niOS 26 Liquid Glass throughout: nav as separate floating capsules rather than a bar, a tab bar that floats beside its own add button, glass tiles and composers, two variants only, concentric radii. Content stays flat and opaque so the chrome is the only thing that floats."
+    },
+    {
+      "id": "bond-note",
+      "x": 4700,
+      "y": -172,
+      "w": 400,
+      "text": "The two Bond screens. A story is captured during the trip; memories are what is left afterwards, and they feed the next trip rather than sitting in an archive. Lilo already had a Memories tab with nothing behind it."
     },
     {
       "id": "flows-note",
       "x": 0,
       "y": 900,
       "w": 640,
-      "text": "Filing a confirmation goes from nine steps to three. Getting a yes from four people moves inside the app. Working out the money stops being a separate chore, because the costs arrive attached to the bookings."
+      "text": "Filing a confirmation goes from nine steps to three. Getting a yes from four people moves inside the app. The money stops being a separate chore because costs arrive attached to bookings."
     },
     {
       "id": "gest-note",
       "x": 1460,
       "y": 900,
       "w": 640,
-      "text": "Gestures are shortcuts for things done repeatedly — voting on six places, ticking a packing list, chasing three people. Paying, settling and cancelling deliberately keep their buttons: anything a toast cannot undo should cost a deliberate tap."
-    },
-    {
-      "id": "gesture-marks",
-      "x": 4700,
-      "y": -150,
-      "w": 380,
-      "text": "The orange notes drawn on Home, The plan, Saved, The kitty, Settle up, Add and Manage are annotations for you, not app furniture. Each marks a gesture and names the tap that does the same job."
+      "text": "Gestures are shortcuts for repeated actions. Paying, settling and cancelling keep their buttons — anything a toast cannot undo should cost a deliberate tap."
     }
   ],
   "launch": { "view": "canvas" }
