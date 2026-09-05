@@ -1,42 +1,37 @@
 {
-  "pages": [
-    { "id": "page-1", "name": "The case" },
-    { "id": "page-2", "name": "Screens" }
-  ],
   "artboards": [
-    { "file": "Why.dc.html",     "x": 0,    "y": 0,   "w": 1240, "h": 820, "title": "Three arguments", "page": "page-1" },
-    { "file": "Kit.dc.html",     "x": 1340, "y": 0,   "w": 980,  "h": 760, "title": "The kit",         "page": "page-1" },
-    { "file": "Main.dc.html",    "x": 0,    "y": 0,   "w": 390,  "h": 844, "title": "The trip",        "page": "page-2" },
-    { "file": "Compose.dc.html", "x": 470,  "y": 0,   "w": 390,  "h": 844, "title": "Add anything",    "page": "page-2" },
-    { "file": "Who.dc.html",     "x": 940,  "y": 0,   "w": 390,  "h": 844, "title": "Who's in",        "page": "page-2" },
-    { "file": "Days.dc.html",    "x": 1410, "y": 0,   "w": 390,  "h": 844, "title": "The plan",        "page": "page-2" },
-    { "file": "Trips.dc.html",   "x": 1880, "y": 0,   "w": 390,  "h": 844, "title": "Home",            "page": "page-2" }
+    { "file": "Trips.dc.html",   "x": 0,    "y": 0,    "w": 390,  "h": 844, "title": "Home" },
+    { "file": "Main.dc.html",    "x": 470,  "y": 0,    "w": 390,  "h": 844, "title": "The trip" },
+    { "file": "Compose.dc.html", "x": 940,  "y": 0,    "w": 390,  "h": 844, "title": "Add anything" },
+    { "file": "Who.dc.html",     "x": 1410, "y": 0,    "w": 390,  "h": 844, "title": "Who's in" },
+    { "file": "Days.dc.html",    "x": 1880, "y": 0,    "w": 390,  "h": 844, "title": "The plan" },
+    { "file": "Saved.dc.html",   "x": 2350, "y": 0,    "w": 390,  "h": 844, "title": "Saved places" },
+    { "file": "Tokyo.dc.html",   "x": 2820, "y": 0,    "w": 390,  "h": 844, "title": "A second trip" },
+    { "file": "Why.dc.html",     "x": 0,    "y": 984,  "w": 1240, "h": 880, "title": "Three arguments" },
+    { "file": "Kit.dc.html",     "x": 1340, "y": 984,  "w": 980,  "h": 760, "title": "The kit" }
   ],
   "annotations": [
     {
-      "id": "case-note",
+      "id": "top",
       "x": 0,
-      "y": -184,
-      "w": 760,
-      "page": "page-1",
-      "text": "A version of Lilo I think is better — and the case for it.\n\nThis is a departure, not an extension. Last time you asked me to work inside Theme.swift; this time the brief was better, so I have argued with the structure instead of matching it. The three arguments are the deliverable. The screens on the next page are what they produce.\n\nRead the arguments first. If you disagree with one, the screens that follow from it are wrong."
+      "y": -232,
+      "w": 780,
+      "text": "A version of Lilo I think is better.\n\nSeven screens replace fourteen. The trip is one page — countdown on the cover, who's in with real state, whatever is waiting on the group, the plan as days. No tabs. Add anything is one field that takes a pasted confirmation, a link or a sentence and proposes what it read; the parse preview is the point, since ParsedBooking already carries every field shown there.\n\nWho's in is the screen Lilo does not have: a grid answering flights, room and bag for each person at once. Saved is where Eat and Experience content lives once the tabs go — one list, filtered, with anything unresolved floating to the top. A second trip sits at the end to show the system holding under a different photo and a different accent.\n\nThe arguments behind all of it are on the board below. Sample content throughout — names, times, prices and references are invented."
     },
     {
-      "id": "screens-note",
-      "x": 0,
-      "y": -212,
-      "w": 760,
-      "page": "page-2",
-      "text": "Five screens replace fourteen.\n\nThe trip is one page: countdown, who's in with real state, anything waiting on the group, the plan as days. No tabs. Add anything is one field that takes a pasted confirmation, a link or a sentence and proposes what it read — the parse preview is the whole point, since ParsedBooking already carries every field shown here.\n\nWho's in is the screen Lilo does not have: a grid answering flights, room, bag for each person at a glance. The plan is days rather than categories, because that is how the week is actually experienced.\n\nThe dock is Partiful's — actions with the live count sitting in the middle of them.\n\nDrawn with your assets and your photography. Sample content throughout: names, times, prices and references are invented."
-    },
-    {
-      "id": "risk-note",
-      "x": 2350,
+      "id": "accent-note",
+      "x": 3290,
       "y": 0,
       "w": 320,
-      "page": "page-2",
-      "text": "Where this is riskiest\n\nThe composer only feels good if the parser is good. Yours is regex over stripped HTML and its own comment says \"good enough for the user to confirm and edit\". That is exactly right for a confirm-first flow — but it means the preview must always be editable and must never claim more confidence than it has.\n\nOne page also means one long scroll. If a trip grows to thirty saved places, sections need their own screens after all — but that is a rule about depth, not a reason to start with five tabs when a trip has nine items."
+      "text": "Same layout, different trip.\n\nThe accent is derived from the cover: Amalfi's terracotta gives #98673E, Tokyo's neon-and-dusk gives #188295. Both are darkened until they clear 4.5:1 on white, so the colour that identifies a trip is also the colour that is safe to set type in.\n\nThat is what retires the cyan contrast problem rather than patching it — cyan goes back to being the app mark and never has to carry text again."
+    },
+    {
+      "id": "why-note",
+      "x": 0,
+      "y": 900,
+      "w": 560,
+      "text": "The case, in three parts. If you disagree with an argument, the screens it produced are wrong — start here rather than with the pixels."
     }
   ],
-  "launch": { "view": "canvas", "page": "page-1" }
+  "launch": { "view": "canvas" }
 }
