@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <style>
+    body { margin: 0; }
+    * { box-sizing: border-box; }
+    a { color: #C2502E; text-decoration: none; }
+    a:hover { color: #9C3D22; }
+    .u { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", system-ui, sans-serif; }
+  </style>
+</helmet>
+<div class="u" style="width: 980px; height: 760px; overflow: hidden; background: #FFFFFF; color: #0B0D0C; -webkit-font-smoothing: antialiased; padding: 34px 38px;">
+  <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 24px;">
+    <div style="display: flex; align-items: center; gap: 14px;">
+      <img src="lilo-mark.png" alt="Lilo" style="height: 42px; width: auto; display: block;">
+      <div>
+        <div style="font-size: 26px; font-weight: 700; letter-spacing: -.5px;">The kit</div>
+        <div style="font-size: 13px; color: rgba(11,13,12,.56); margin-top: 2px;">A departure from Theme.swift &mdash; here is what changes and why</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: 1.15fr 1fr 1fr; gap: 22px; margin-top: 24px;">
+
+    <div style="border-radius: 22px; padding: 20px; box-shadow: 0 0 0 .5px rgba(11,13,12,.09), 0 6px 18px rgba(11,13,12,.05);">
+      <div style="font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: rgba(11,13,12,.34);">Every trip gets its own colour</div>
+      <div style="font-size: 13px; color: rgba(11,13,12,.56); line-height: 1.55; margin-top: 10px;">The accent is pulled from the cover photo, so Amalfi is terracotta and Chamonix is slate. One cyan for every trip flattens them into one trip.</div>
+
+      <div style="display: flex; gap: 12px; margin-top: 16px;">
+        <div style="flex: 1;">
+          <div style="height: 62px; border-radius: 14px; overflow: hidden;"><img src="amalfi.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;"></div>
+          <div style="display: flex; align-items: center; gap: 7px; margin-top: 8px;">
+            <span style="width: 18px; height: 18px; border-radius: 6px; background: #C2502E; flex: none;"></span>
+            <span style="font-size: 11.5px; font-weight: 600;">#C2502E</span>
+          </div>
+        </div>
+        <div style="flex: 1;">
+          <div style="height: 62px; border-radius: 14px; overflow: hidden;"><img src="positano.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; filter: saturate(.85) hue-rotate(-14deg);"></div>
+          <div style="display: flex; align-items: center; gap: 7px; margin-top: 8px;">
+            <span style="width: 18px; height: 18px; border-radius: 6px; background: #A2582F; flex: none;"></span>
+            <span style="font-size: 11.5px; font-weight: 600;">#A2582F</span>
+          </div>
+        </div>
+        <div style="flex: 1;">
+          <div style="height: 62px; border-radius: 14px; background: linear-gradient(150deg, #DDE7E4, #8FA5A0);"></div>
+          <div style="display: flex; align-items: center; gap: 7px; margin-top: 8px;">
+            <span style="width: 18px; height: 18px; border-radius: 6px; background: #435854; flex: none;"></span>
+            <span style="font-size: 11.5px; font-weight: 600;">#435854</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="height: .5px; background: rgba(11,13,12,.09); margin: 18px 0 14px 0;"></div>
+      <div style="font-size: 13px; color: rgba(11,13,12,.56); line-height: 1.55;">Lilo cyan <span style="display: inline-block; width: 11px; height: 11px; border-radius: 3px; background: #5EBFD1; vertical-align: -1px;"></span> stays as the brand mark and app chrome. It never has to carry text contrast again, which fixes the 1.9:1 problem rather than working around it.</div>
+
+      <div style="display: flex; gap: 10px; margin-top: 16px;">
+        <div style="flex: 1;"><div style="height: 30px; border-radius: 8px; background: #1E7A38;"></div><div style="font-size: 11.5px; color: rgba(11,13,12,.56); margin-top: 6px;">done</div></div>
+        <div style="flex: 1;"><div style="height: 30px; border-radius: 8px; background: #B87400;"></div><div style="font-size: 11.5px; color: rgba(11,13,12,.56); margin-top: 6px;">waiting</div></div>
+        <div style="flex: 1;"><div style="height: 30px; border-radius: 8px; background: #A3ABA7;"></div><div style="font-size: 11.5px; color: rgba(11,13,12,.56); margin-top: 6px;">not yet</div></div>
+      </div>
+    </div>
+
+    <div style="border-radius: 22px; padding: 20px; box-shadow: 0 0 0 .5px rgba(11,13,12,.09), 0 6px 18px rgba(11,13,12,.05);">
+      <div style="font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: rgba(11,13,12,.34);">Type &mdash; still SF</div>
+      <div style="font-size: 13px; color: rgba(11,13,12,.56); line-height: 1.55; margin-top: 10px;">Luma, Partiful, Posh and Family are all system-font apps. The personality comes from photography and colour, not a webfont.</div>
+      <div style="margin-top: 16px;">
+        <div style="font-size: 36px; font-weight: 700; letter-spacing: -.8px;">Amalfi Coast</div>
+        <div style="font-size: 11.5px; color: rgba(11,13,12,.34); margin-top: 3px;">36 / 700 / &minus;0.8 &mdash; trip name</div>
+      </div>
+      <div style="height: .5px; background: rgba(11,13,12,.09); margin: 14px 0;"></div>
+      <div>
+        <div style="font-size: 28px; font-weight: 700; letter-spacing: -.6px;">4 going, 1 asked</div>
+        <div style="font-size: 11.5px; color: rgba(11,13,12,.34); margin-top: 3px;">28 / 700 &mdash; screen answer</div>
+      </div>
+      <div style="height: .5px; background: rgba(11,13,12,.09); margin: 14px 0;"></div>
+      <div>
+        <div style="font-size: 15px; font-weight: 600;">Path of the Gods</div>
+        <div style="font-size: 11.5px; color: rgba(11,13,12,.34); margin-top: 3px;">15 / 600 &mdash; rows</div>
+      </div>
+      <div style="height: .5px; background: rgba(11,13,12,.09); margin: 14px 0;"></div>
+      <div>
+        <div style="font-size: 13px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: rgba(11,13,12,.34);">Who&rsquo;s in</div>
+        <div style="font-size: 11.5px; color: rgba(11,13,12,.34); margin-top: 3px;">13 / 600 / +0.06em &mdash; rails</div>
+      </div>
+    </div>
+
+    <div style="border-radius: 22px; padding: 20px; box-shadow: 0 0 0 .5px rgba(11,13,12,.09), 0 6px 18px rgba(11,13,12,.05);">
+      <div style="font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: rgba(11,13,12,.34);">Parts</div>
+
+      <div style="height: 64px; border-radius: 999px; background: rgba(255,255,255,.72); backdrop-filter: blur(26px) saturate(190%); -webkit-backdrop-filter: blur(26px) saturate(190%); box-shadow: inset 0 .5px 0 rgba(255,255,255,1), 0 0 0 .5px rgba(11,13,12,.06), 0 8px 26px rgba(11,13,12,.13); display: flex; align-items: center; padding: 0 8px; gap: 4px; margin-top: 16px;">
+        <div style="flex: 1; text-align: center; font-size: 10.5px; font-weight: 600;">Invite</div>
+        <div style="flex: 1; text-align: center; font-size: 10.5px; font-weight: 600;">Shout</div>
+        <div style="width: 72px; height: 50px; border-radius: 999px; background: #FFFFFF; box-shadow: 0 0 0 .5px rgba(11,13,12,.07), 0 3px 12px rgba(11,13,12,.14); display: flex; flex-direction: column; align-items: center; justify-content: center; flex: none;">
+          <span style="font-size: 17px; font-weight: 700;">4</span><span style="font-size: 9.5px; font-weight: 600; color: rgba(11,13,12,.56);">going</span>
+        </div>
+        <div style="flex: 1; text-align: center; font-size: 10.5px; font-weight: 600;">Pack</div>
+        <div style="flex: 1; text-align: center; font-size: 10.5px; font-weight: 600; color: #C2502E;">Add</div>
+      </div>
+      <div style="font-size: 11.5px; color: rgba(11,13,12,.34); margin-top: 8px; line-height: 1.45;">The dock carries live group state, not just actions.</div>
+
+      <div style="display: flex; gap: 8px; margin-top: 16px; flex-wrap: wrap;">
+        <span style="height: 26px; padding: 0 11px; border-radius: 999px; background: rgba(30,122,56,.12); color: #1E7A38; font-size: 12.5px; font-weight: 600; display: inline-flex; align-items: center; flex: none;">Booked</span>
+        <span style="height: 26px; padding: 0 11px; border-radius: 999px; background: rgba(184,116,0,.14); color: #B87400; font-size: 12.5px; font-weight: 600; display: inline-flex; align-items: center; flex: none;">Waiting</span>
+        <span style="height: 26px; padding: 0 11px; border-radius: 999px; background: rgba(11,13,12,.05); color: rgba(11,13,12,.56); font-size: 12.5px; font-weight: 600; display: inline-flex; align-items: center; flex: none;">Idea</span>
+        <span style="height: 26px; padding: 0 11px; border-radius: 999px; background: rgba(194,80,46,.1); color: #C2502E; font-size: 12.5px; font-weight: 600; display: inline-flex; align-items: center; flex: none;">Place it</span>
+      </div>
+
+      <div style="display: flex; gap: 9px; margin-top: 16px;">
+        <div style="flex: 1; height: 42px; border-radius: 999px; background: #C2502E; color: #FFFFFF; font-size: 15px; font-weight: 600; display: flex; align-items: center; justify-content: center;">I&rsquo;m in</div>
+        <div style="flex: 1; height: 42px; border-radius: 999px; background: rgba(11,13,12,.05); color: rgba(11,13,12,.56); font-size: 15px; font-weight: 600; display: flex; align-items: center; justify-content: center;">Can&rsquo;t</div>
+      </div>
+      <div style="font-size: 11.5px; color: rgba(11,13,12,.34); margin-top: 8px; line-height: 1.45;">Decisions are two buttons, never a chip you have to interpret.</div>
+
+      <div style="border-radius: 22px; background: #FFFFFF; box-shadow: 0 0 0 .5px rgba(11,13,12,.09), 0 6px 18px rgba(11,13,12,.05); padding: 13px; margin-top: 16px;">
+        <div style="font-size: 14px; font-weight: 600;">Card</div>
+        <div style="font-size: 11.5px; color: rgba(11,13,12,.56); margin-top: 3px;">radius 22 &middot; hairline .5px at 9% &middot; shadow 5% r18 y6</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

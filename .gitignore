@@ -47,3 +47,4 @@ Archive/node_modules/
 # Seeded design canvas output (published as an Artifact; re-seed from the .dc.html sources)
 design/**/lido-redesign.html
 design/**/lilo-redesign.html
+design/**/lilo-better.html
