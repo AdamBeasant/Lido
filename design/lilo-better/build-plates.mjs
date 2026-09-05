@@ -11,7 +11,7 @@ const para = t => esc(t).split('\n\n').map(p => `<p>${p.replace(/\n/g, '<br>')}<
 const note = Object.fromEntries(manifest.annotations.map(a => [a.id, a.text]))
 
 // The four explanation boards are not screens, so they are not plate-numbered.
-const SCREENS = 13
+const SCREENS = 11
 const CAPTION = { 'Memories.dc.html': note['bond-note'], 'Flows.dc.html': note['flows-note'], 'Gestures.dc.html': note['gest-note'] }
 
 const plates = manifest.artboards.map((ab, i) => {
@@ -117,7 +117,7 @@ const html = `<title>Lilo Screen Plates</title>
 
 <header class="wrap">
   <h1>Lilo Screen Plates</h1>
-  <p class="standfirst">Thirteen screens and four explanation boards, flattened out of the design canvas so they read straight down the page.</p>
+  <p class="standfirst">Eleven screens and four explanation boards, flattened out of the design canvas so they read straight down the page.</p>
   <div class="lead">${para(note['top'])}</div>
   <nav class="index">
     <h2>Plates</h2>
